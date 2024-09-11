@@ -1,0 +1,32 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-shadow: 0 0 20px rgba(38, 37, 37, 0.5);
+}
+
+.App-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.App-container main{
+  flex: 1;
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-container{
+  background-image: url("./assets/simboloCoral.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 550px;
+}
