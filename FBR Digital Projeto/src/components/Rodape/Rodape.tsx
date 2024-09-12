@@ -1,4 +1,4 @@
-import Logo from "../../assets/logo-fbr.png";
+import Logo from "../../assets/Marca FBR.png";
 import "./Rodape.css";
 
 const Rodape: React.FC = () => {

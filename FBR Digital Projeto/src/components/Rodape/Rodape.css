@@ -17,10 +17,14 @@ footer{
   align-items: center;
 }
 
-figure{
+figure {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+figure img {
+  width: 140px;
 }
 
 .button-item1 button a{

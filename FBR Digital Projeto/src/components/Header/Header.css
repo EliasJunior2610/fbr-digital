@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
 
 #Header {
-    background-color: #2E2E2E;
+    background-color: #303434;
     color: #f26651;
-    padding-bottom: 13px;
+    /* padding-bottom: 3px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,9 @@
 }
 
 #Header img {
+    margin-top: 8px;
     margin-left: 13px;
+    width: 140px;
 }
 
 #Header #Links {

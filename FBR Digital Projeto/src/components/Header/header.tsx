@@ -1,5 +1,5 @@
 import "./Header.css";
-import Logo from "../../assets/logo-fbr.png";
+import Logo from "../../assets/Marca FBR.png";
 
 function Header() {
     return(
