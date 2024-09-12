@@ -1,18 +1,12 @@
-import "./App.css";
-import Login from "./components/Login/Login";
-import Header from "./components/Header/header";
+import Rodape from './components/Rodape/Rodape'
 
 function App() {
+
   return (
-    <div className="App-container">
-      <header>
-        <Header />
-      </header>
-      <main>
-        <Login />
-      </main>
+    <div>
+      <Rodape />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

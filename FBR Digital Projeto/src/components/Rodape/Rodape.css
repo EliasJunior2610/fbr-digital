@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+footer{
+  font-family: 'Dm Mono', monospace;
+}
+
+.container{
+  background-color: #303434;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.container .container-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-item1 button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-item2 button a{
+  text-decoration: none;
+  color: #F26651;
+}
+
+.text p{
+  color: #D6D7D7;
+  font-size: 22px;
+}
