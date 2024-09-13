@@ -1,43 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
 
-footer{
+#baseboard {
   font-family: 'Dm Mono', monospace;
-}
-
-.container{
   background-color: #303434;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+  color: #D6D7D7;
 }
 
-.container .container-button{
-  display: flex;
-  justify-content: center;
+#button1 {
+  background: linear-gradient(90deg, #f79e68, #f26651);
+  transition: background 0.3s; 
+}
+
+#button2 {
+  background-color: #ffffff;
+}
+
+#button1, #button2 {
+  font-family: 'Dm Mono', monospace;
+  cursor: pointer;
+  border-radius: 30px;
+  width: auto;
+  height: 54px;
+  padding: 16px 23px;
   align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+#button1 {
+  color: #D6D7D7;
+}
+
+#button2 {
+  color: #F26651;
+}
+
+#container-button {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+#button1 a, #button2 a {
+  color: inherit;
+}
+
+#button1:hover {
+  background: linear-gradient(90deg, #d88b6b, #c44a3e); 
+}
+
+#textos {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#text2 {
+  text-align: right;
+}
+
+img {
+  width: 140px;
 }
 
 figure {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-figure img {
-  width: 140px;
-}
-
-.button-item1 button a{
-  text-decoration: none;
-  color: #fff;
-}
-
-.button-item2 button a{
-  text-decoration: none;
-  color: #F26651;
-}
-
-.text p{
-  color: #D6D7D7;
-  font-size: 22px;
 }
