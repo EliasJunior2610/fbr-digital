@@ -49,6 +49,10 @@
   background: linear-gradient(90deg, #d88b6b, #c44a3e); 
 }
 
+#button1:hover, #button2:hover {
+  box-shadow: 0 4px 6px 0 #000000;
+}
+
 #textos {
   display: flex;
   justify-content: space-around;
