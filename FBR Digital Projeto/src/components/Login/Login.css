@@ -1,100 +1,80 @@
-.container {
-  width: 450px;
-  background-color: #2e2e2e;
-  border-radius: 10px;
-  padding: 40px;
+#Login {
   display: flex;
-  justify-content: right;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  height: 100vh;           /* Faz com que o contêiner ocupe a altura total da tela */
+  background-color: #1a1a1a; /* Fundo escuro para contraste */
 }
 
-.container h1 {
-  text-align: center;
-  color: #f6665b;
-  font-size: 40px;
-}
-
-.container .input-field {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin: 30px auto;
-}
-
-.input-field input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  background-color: rgb(0, 0, 0);
-  font-size: 26px;
-  color: #fff;
-  padding: 20px 45px;
-  border-radius: 25px;
-}
-
-.input-field input::placeholder {
-  color: #fdfbfb;
-}
-
-.input-field .icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
-  color: #ffffff;
-}
-
-.container .recall-forget {
+form {
   display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  margin: -15px 0 30px 0;
+  flex-direction: column;  /* Faz com que os itens fiquem empilhados verticalmente */
+  align-items: center;     /* Centraliza os itens dentro do form */
+  background-color: #2e2e2e; /* Cor de fundo do formulário */
+  color: white;
+  padding: 30px; /* Aumenta o espaçamento interno do formulário */
+  padding-left: 30px;
+  border-radius: 12px;      /* Bordas arredondadas mais suaves */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  width: 25%;               /* Largura do formulário, ajustada para ser responsiva */
+  /* max-width: 400px;        Largura máxima do formulário */
 }
 
-.recall-forget label {
-  color: #fff;
+form h1 {
+  color: #f26651;
+  margin-bottom: 20px;     /* Espaçamento inferior para título */
 }
 
-.recall-forget input {
-  margin-right: 10px;
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+  width: 100%;             /* Define a largura dos inputs para 100% */
+  padding: 12px;           /* Aumenta o preenchimento para maior conforto */
+  margin-bottom: 15px;     /* Aumenta o espaço entre os campos */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;         /* Aumenta o tamanho da fonte para melhor legibilidade */
 }
 
-.recall-forget a {
-  color: #fff;
-  text-decoration: none;
+form label {
+  margin-bottom: 5px;      /* Ajusta o espaçamento entre o checkbox e o próximo elemento */
+  display: block;
+  font-size: 14px;         /* Ajusta o tamanho da fonte do label */
 }
 
-.recall-forget a:hover {
-  text-decoration: underline;
-}
-
-.container button {
-  width: 100%;
-  height: 50px;
-  background-color: #f6665b;
-  color: #fff;
-  font-size: 26px;
-  border: none;
-  outline: none;
+#button input[type="submit"] {
+  background-color: #f26651; /* Cor do botão */
+  color: white;
   cursor: pointer;
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 100%;
+  padding: 12px;           /* Aumenta o preenchimento do botão */
+  font-size: 16px;         /* Aumenta o tamanho da fonte do botão */
+  border-radius: 4px;      /* Bordas arredondadas do botão */
+  transition: background-color 0.3s; /* Efeito de transição suave para a cor do botão */
 }
 
-.container .singUp-link {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 20px;
+#button input[type="submit"]:hover {
+  background-color: #a04334; /* Cor do botão ao passar o mouse */
 }
 
-.singUp-link a {
-  color: #fff;
-  text-decoration: none;
+#usuario,
+#senha {
+  padding-left: 500px; /* Espaço para o ícone */
+  background-size: 20px; /* Ajusta o tamanho do ícone */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;        /* Aumenta a altura dos campos para maior conforto */
+  width: 100%;
+  font-size: 16px;     /* Aumenta o tamanho da fonte dos inputs */
+  text-align: center;  /* Centraliza o texto dentro dos inputs */
 }
 
-.singUp-link p {
-  color: #f6665b;
+/* Adiciona um espaço maior para o ícone */
+#usuario {
+  background: url('../../assets/bxs-user.svg') no-repeat scroll 10px center;
 }
 
-.singUp-link a:hover {
-  text-decoration: underline;
+#senha {
+  background: url('../../assets/bxs-lock.svg') no-repeat scroll 10px center;
 }

@@ -1,62 +1,20 @@
-import { FaUser, FaLock } from "react-icons/fa";
-
-import { useState } from "react";
 import "./Login.css";
 
-const Login: React.FC = () => {
-  // CRIAÇÃO DAS VARIAVEIS
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-
-  // ENVIAR PARA O BACKEND
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    
-  };
-
+export default function Login() {
   return (
-    <div className="container">
-      <form onSubmit={handleSubmit}>
+    <div id="Login">
+      <form action="">
         <h1>Login</h1>
-
-        <div className="input-field">
-          <input
-            type="email"
-            placeholder="E-mail"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <FaUser className="icon" />
-        </div>
-
-        <div className="input-field">
-          <input
-            type="password"
-            placeholder="Senha"
-            required
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <FaLock className="icon" />
-        </div>
-
-        <div className="recall-forget">
-          <label>
-            <input type="checkbox" />
-            Lembre de mim
-          </label>
-          <a href="#">Esqueceu a senha</a>
-        </div>
-
-        <button>Entrar</button>
-
-        <div className="singUp-link">
-          <p>Não tem conta?</p>
-          <a href="#">Cadastre-se</a>
-        </div>
+        <div id="email"><input type="email" placeholder="E-mail:" id="usuario"/></div>
+        <div id="password"><input type="password" placeholder="Senha:" id="senha"/></div>
+        <label>
+          <input type="checkbox" name="" id="" />
+          Lembre de mim
+        </label>
+        <div id="forgotPassoword"><label htmlFor="">Esqueceu a senha?</label></div>
+        <div id="button"><input type="submit" value="Entrar" /></div>
+        <label htmlFor="">Cadastrar-se</label>
       </form>
     </div>
-  );
-};
-
-export default Login;
+  )
+}

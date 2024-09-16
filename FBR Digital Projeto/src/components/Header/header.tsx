@@ -1,6 +1,5 @@
 import "./Header.css";
 import Logo from "../../assets/Marca FBR.png";
-import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,12 +8,12 @@ function Header() {
         <img src={Logo} alt="Logo FBR Digital" />
       </a>
       <div id="Links">
-        <Link to="/registro">
+        <a href="/registro">
           <p>Cadastro</p>
-        </Link>
-        <Link to="/login">
+        </a>
+        <a href="/login">
           <p>Login</p>
-        </Link>
+        </a>
       </div>
     </div>
   );
