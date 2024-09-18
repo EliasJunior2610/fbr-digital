@@ -64,6 +64,7 @@ input[type="password"] {
 
 #button input[type="submit"] {
 margin: 0px;
+margin-left: -9px;
 }
 
 input[type="submit"] {
@@ -73,9 +74,9 @@ input[type="submit"] {
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
-  padding: 0; 
+  padding: 1px;
   line-height: 40px; 
-  width: 327px; 
+  width: 120%; 
   border: none;
 }
 
