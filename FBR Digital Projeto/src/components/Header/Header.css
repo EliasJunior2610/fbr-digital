@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Dm Mono', monospace;
+    margin-bottom: -40px;
 }
 
 #Header img {

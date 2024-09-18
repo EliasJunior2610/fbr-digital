@@ -1,3 +1,77 @@
-.Container{
-  margin-right: 40px;
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -60px;
+  font-family: 'Dm Mono', monospace;
+}
+
+.register-header {
+  display: flex;
+  justify-content: column; 
+  align-items: column; 
+  width: 100%;
+  padding: 50px 0; 
+  background-color: #333;
+}
+
+.logo {
+  width: 150px; 
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+.register-form {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+
+
+.register-title {
+  color: #ff6b61;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: #ddd;
+  box-sizing: border-box;
+}
+
+
+.register-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b61;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #e65a50;
 }
