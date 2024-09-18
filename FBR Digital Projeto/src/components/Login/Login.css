@@ -1,80 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
 #Login {
+  text-align: center;
+  height: 100vh;
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
-  height: 100vh;           /* Faz com que o contêiner ocupe a altura total da tela */
-  background-color: #1a1a1a; /* Fundo escuro para contraste */
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dm Mono', monospace;
 }
 
 form {
+  background-color: #303434;
   display: flex;
-  flex-direction: column;  /* Faz com que os itens fiquem empilhados verticalmente */
-  align-items: center;     /* Centraliza os itens dentro do form */
-  background-color: #2e2e2e; /* Cor de fundo do formulário */
-  color: white;
-  padding: 30px; /* Aumenta o espaçamento interno do formulário */
-  padding-left: 30px;
-  border-radius: 12px;      /* Bordas arredondadas mais suaves */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
-  width: 25%;               /* Largura do formulário, ajustada para ser responsiva */
-  /* max-width: 400px;        Largura máxima do formulário */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 35px;
+  border-radius: 17px;
 }
 
-form h1 {
+h1 {
   color: #f26651;
-  margin-bottom: 20px;     /* Espaçamento inferior para título */
 }
 
-form input[type="email"],
-form input[type="password"],
-form input[type="submit"] {
-  width: 100%;             /* Define a largura dos inputs para 100% */
-  padding: 12px;           /* Aumenta o preenchimento para maior conforto */
-  margin-bottom: 15px;     /* Aumenta o espaço entre os campos */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;         /* Aumenta o tamanho da fonte para melhor legibilidade */
-}
-
-form label {
-  margin-bottom: 5px;      /* Ajusta o espaçamento entre o checkbox e o próximo elemento */
-  display: block;
-  font-size: 14px;         /* Ajusta o tamanho da fonte do label */
-}
-
-#button input[type="submit"] {
-  background-color: #f26651; /* Cor do botão */
+label {
   color: white;
+}
+
+input {
+  font-family: 'Dm Mono', monospace;
+}
+
+.input-container {
+  position: relative; 
+  width: 300px; 
+  margin-right: 30px; 
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%; 
+  height: 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: #d9d9d9;
+}
+
+.input-icon {
+  position: absolute; 
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+  width: 20px; 
+  height: 20px; 
+  fill: #555; 
+}
+
+input[type="submit"] {
+  background-color: #f26651;
+  color: white;
+  height: 40px; 
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0; 
+  line-height: 40px; 
+  width: 327px; 
+}
+
+input[type="submit"]:hover {
   cursor: pointer;
-  border: none;
-  width: 100%;
-  padding: 12px;           /* Aumenta o preenchimento do botão */
-  font-size: 16px;         /* Aumenta o tamanho da fonte do botão */
-  border-radius: 4px;      /* Bordas arredondadas do botão */
-  transition: background-color 0.3s; /* Efeito de transição suave para a cor do botão */
+  background-color: #ac4838;
 }
 
-#button input[type="submit"]:hover {
-  background-color: #a04334; /* Cor do botão ao passar o mouse */
+.checkbox-forgot {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  width: 100%; 
 }
 
-#usuario,
-#senha {
-  padding-left: 500px; /* Espaço para o ícone */
-  background-size: 20px; /* Ajusta o tamanho do ícone */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  height: 50px;        /* Aumenta a altura dos campos para maior conforto */
-  width: 100%;
-  font-size: 16px;     /* Aumenta o tamanho da fonte dos inputs */
-  text-align: center;  /* Centraliza o texto dentro dos inputs */
+label {
+  white-space: nowrap; 
 }
 
-/* Adiciona um espaço maior para o ícone */
-#usuario {
-  background: url('../../assets/bxs-user.svg') no-repeat scroll 10px center;
-}
-
-#senha {
-  background: url('../../assets/bxs-lock.svg') no-repeat scroll 10px center;
+input[type="checkbox"] {
+  margin-right: 5px; 
 }

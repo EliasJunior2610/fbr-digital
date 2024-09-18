@@ -3,7 +3,6 @@ import Header from "./components/Header/header";
 import Rodape from "./components/Rodape/Rodape";
 import Registro from "./components/Registro/Registro";
 import Login from "./components/Login/Login";
-import Fundo from "./assets/fundo.png"
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           element={
             <>
               <Header />
-              <img src={Fundo} alt="" />
               <Rodape />
             </>
           }
