@@ -5,6 +5,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Register from './components/Registro/Registro.tsx'
 import Login from './components/Login/Login.tsx'
+import Forget from './components/Forget/Forget.tsx'
 
 const rotas = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const rotas = createBrowserRouter([
   {
     path: '/login',
     element: <Login />
+  },
+  {
+    path: '/forget',
+    element: <Forget />
   }
 ])
 
