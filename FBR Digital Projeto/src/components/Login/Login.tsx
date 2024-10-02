@@ -1,5 +1,6 @@
 import Header from "../Header/header";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -24,7 +25,7 @@ export default function Login() {
             <label htmlFor="">Esqueceu a senha?</label>
           </div>
           <div id="button"><input type="submit" value="Entrar" /></div>
-          <label htmlFor="">Cadastrar-se</label>
+          <Link to="/registro"><label htmlFor="">Cadastrar-se</label></Link>
         </form>
       </div>
     </div>
