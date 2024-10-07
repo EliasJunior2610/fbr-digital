@@ -18,9 +18,7 @@ const SendCode = styled(Button)({
     }
 })
 
-const CSSTextField = styled(TextField)({
-    
-})
+
 
 export default function Forget() {
     return (
@@ -43,7 +41,7 @@ export default function Forget() {
                         <FormControlLabel value="telefone" control={<Radio />} label="Telefone" />
                     </RadioGroup>
                 </FormControl>
-                <CSSTextField id="filled-basic" label="Escreva aqui:" variant="filled" />
+                <TextField id="filled-basic" label="Escreva aqui:" color='info' variant="filled" />
             
                 <Stack spacing={2} direction="row">             
                     <SendCode variant="contained" onClick={() => alert('Clicado!')}>Enviar código</SendCode>
