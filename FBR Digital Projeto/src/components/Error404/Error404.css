@@ -4,6 +4,22 @@
     height: 100vh;
 }
 
+#Erro {
+    font-size: 100px;
+}
+
 #volta, #verificar, #notFound {
     color: white;
+}
+
+#volta {
+    border-bottom: solid 2px  #E95C47;
+}
+
+#volta, #verificar {
+    font-size: large;
+}
+
+#meio {
+    padding-top: 100px;
 }
