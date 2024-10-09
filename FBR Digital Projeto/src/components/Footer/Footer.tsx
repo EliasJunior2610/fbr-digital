@@ -1,5 +1,5 @@
 import Logo from "../../assets/Marca FBR.png";
-import "./Rodape.css";
+import "./Footer.css";
 
 function Rodape(){
   return (

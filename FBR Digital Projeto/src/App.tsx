@@ -1,5 +1,5 @@
 import Header from "./components/Header/header";
-import Rodape from "./components/Rodape/Rodape";
+import Rodape from "./components/Footer/Footer";
 
 function App() {
   return (
