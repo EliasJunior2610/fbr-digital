@@ -11,7 +11,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import { Button } from "@mui/material";
+import { Button, Paper } from "@mui/material";
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
@@ -31,7 +31,8 @@ export default function MenuAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#212121" }}>
+      <Paper />
+      <AppBar position="static" sx={{ backgroundColor: "#212121"}}>
         <Toolbar>
           <IconButton
             size="large"
