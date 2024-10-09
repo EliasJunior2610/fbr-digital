@@ -26,10 +26,14 @@ export default function Forget() {
       <Box
         component="form"
         sx={{
+          width: "100vw",
+          height: "100vh",
+          margin: 0,
+          padding: 0,
           "& > :not(style)": { m: 1, width: "50ch" },
           borderRadius: 0,
           display: "flex",
-          justifyContent: "center",
+
         }}
         noValidate
         autoComplete="off"
