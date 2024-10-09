@@ -6,12 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Register from './components/Registro/Registro.tsx'
 import Login from './components/Login/Login.tsx'
 import Forget from './components/Forget/Forget.tsx'
+import Error404 from './components/Error404/Error404.tsx'
 
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <div><h1>Tem que criar uma página pro 404!</h1></div>
+    errorElement: <Error404 />
   },
   {
     path: '/registro',

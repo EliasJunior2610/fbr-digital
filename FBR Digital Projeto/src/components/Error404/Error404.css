@@ -1,0 +1,9 @@
+#Error404 {
+    text-align: center;
+    background-color: #303434;
+    height: 100vh;
+}
+
+#volta, #verificar, #notFound {
+    color: white;
+}
