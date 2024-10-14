@@ -25,6 +25,7 @@ export default function Login() {
             <Link to='/forget'><label htmlFor="">Esqueceu a senha?</label></Link>
           </div>
           <div id="button"><input type="submit" value="Entrar" /></div>
+          <label htmlFor="" id="SemConta">Não tem conta?</label>
           <Link to="/registro"><label htmlFor="">Cadastrar-se</label></Link>
         </form>
       </div>

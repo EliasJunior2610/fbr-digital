@@ -105,3 +105,7 @@ input[type="checkbox"] {
   cursor: pointer;
   text-decoration: none;
 }
+
+#SemConta {
+  color: #f26651;
+}
