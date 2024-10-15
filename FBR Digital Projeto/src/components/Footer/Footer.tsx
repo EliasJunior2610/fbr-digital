@@ -4,37 +4,23 @@ import "./Footer.css";
 function Rodape(){
   return (
     <div id="baseboard">
-        <div id="textos">
-           <div id="text1">
-            <p>R. Maria de Lourdes Casé Porto, 51</p>
-            <p>Edif Times Business, salas 1701 a 1704</p>
-            <p>Bairro Maurício de Nassau Caruaru - PE</p>
-          </div>
-          
-          <div id="text2">
-            <p>comercial@fbrdigital.com.br</p>
-            <p>0800 081 4034 | (81) </p>
-          </div>
+        <div id="ladoEsquerdo">
+          <h2>Endereço</h2>
+          <p>R. Maria de Lourdes Casé Porto, 51 <br /> Edif Times Business, salas 1701 a  1704 <br /> Bairro Maurício de Nassau Caruaru - PE</p>
         </div>
-
-        <div id="container-button">
-          <div id="button-item1">
-            <button id="button1">
-              Solicitar Serviço
-            </button>
-          </div>
-
-          <div id="button-item2">
-            <button id="button2">
-              Download do Contrato Padrão
-            </button>
-          </div>
+        <div className="linha"></div>
+        <div id="ladoMeio">
+          <h2>Serviço</h2>
+          <p>Solicite orçamento</p>
+          <p>Download do contrato padrão</p>
+          <img src={Logo} alt="Logo da FBR" />
         </div>
-
-
-        <figure>
-          <img src={Logo} alt="Logo FBR" />
-        </figure>
+        <div className="linha"></div>
+        <div id="ladoDireito">
+          <h2>Contato</h2>
+          <p>comercial@fbrdigital.com.br</p>
+          <p>0800 081 4034 | (81) 4040-4034</p>
+        </div>
     </div>
   );
 };
