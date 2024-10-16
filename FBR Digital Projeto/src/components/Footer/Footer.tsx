@@ -20,6 +20,7 @@ function Rodape(){
           <h2>Contato</h2>
           <p>comercial@fbrdigital.com.br</p>
           <p>0800 081 4034 | (81) 4040-4034</p>
+          
         </div>
     </div>
   );

@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
 #baseboard {
   display: flex;
   justify-content: space-evenly;
   gap: 100px;
   background-color: #303434;
+  font-family: 'Dm Mono', monospace;
+  font-size: small;
 }
 
 #baseboard .linha {
