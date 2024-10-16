@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Registro.css'; 
+import './Register.css'; 
 import Header from '../Header/header';
 
 const Register: React.FC = () => {

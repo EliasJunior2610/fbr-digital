@@ -22,7 +22,7 @@ export default function Login() {
               <input type="checkbox" name="" id="" />
               Lembre de mim
             </label>
-            <Link to='/forget'><label htmlFor="">Esqueceu a senha?</label></Link>
+            <Link to='/esqueceu'><label htmlFor="">Esqueceu a senha?</label></Link>
           </div>
           <div id="button"><input type="submit" value="Entrar" /></div>
           <label htmlFor="" id="SemConta">Não tem conta?</label>
