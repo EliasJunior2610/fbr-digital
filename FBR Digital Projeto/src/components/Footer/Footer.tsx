@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/Marca FBR.png";
 import "./Footer.css";
 
@@ -6,14 +7,14 @@ function Rodape(){
     <div id="baseboard">
         <div id="ladoEsquerdo">
           <h2>Endereço</h2>
-          <p>R. Maria de Lourdes Casé Porto, 51 <br /> Edif Times Business, salas 1701 a  1704 <br /> Bairro Maurício de Nassau Caruaru - PE</p>
+          <p>R. Maria de Lourdes Casé Porto, 51 <br /> Edif Times Business, salas 1701 a  1704 <br /> Bairro Maurício de Nassau, Caruaru - PE</p>
         </div>
         <div className="linha"></div>
         <div id="ladoMeio">
           <h2>Serviço</h2>
           <p>Solicite orçamento</p>
           <p>Download do contrato padrão</p>
-          <img src={Logo} alt="Logo da FBR" />
+          <Link to='/'><img src={Logo} alt="Logo da FBR" /></Link>
         </div>
         <div className="linha"></div>
         <div id="ladoDireito">

@@ -12,6 +12,8 @@
 #baseboard .linha {
   background-color: white;
   width: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #baseboard h2 {
@@ -24,4 +26,8 @@
 
 #baseboard img {
   width: 130px;
+}
+
+#baseboard img:hover {
+  cursor: pointer;
 }
