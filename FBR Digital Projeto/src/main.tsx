@@ -30,6 +30,10 @@ const rotas = createBrowserRouter([
   {
     path: '/solicitacao',
     element: <ServiceRequest />
+  },
+  {
+    path: 'minhas-solicitacoes',
+    element: <div>Tem que fazer essa página ainda!</div>
   }
 ])
 
