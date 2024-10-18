@@ -90,6 +90,11 @@ body {
     font-family: 'DM Mono', monospace;
 }
 
+.popup-content button:hover {
+    cursor: pointer;
+    background-color: #ce5846;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

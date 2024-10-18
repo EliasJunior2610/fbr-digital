@@ -25,6 +25,7 @@ export default function ServiceRequest() {
                 <label htmlFor="service-type">Tipo de serviço:</label>
                 <select name="service-type" id="service-type" required>
                     <option value="install">Instalação</option>
+                    <option value="Maintenance">Manutenção</option>
                 </select>
 
                 <label htmlFor="favorite-date">Data preferida:</label>
