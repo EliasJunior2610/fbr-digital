@@ -10,7 +10,7 @@
   background-color: #303434;
 }
 
-form {
+#Login form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,25 +20,25 @@ form {
   border-radius: 17px;
 }
 
-h1 {
+#login h1 {
   color: #f26651;
 }
 
-label {
+#Login label {
   color: white;
 }
 
-input {
+#Login input {
   font-family: 'Dm Mono', monospace;
 }
 
-.input-container {
+#Login .input-container {
   position: relative; 
   width: 300px; 
   margin-right: 30px; 
 }
 
-input[type="email"], input[type="password"], input[type="submit"] {
+#Login input[type="email"], #Login input[type="password"], #Login input[type="submit"] {
   width: 100%; 
   height: 35px;
   border-radius: 10px;
@@ -47,12 +47,11 @@ input[type="email"], input[type="password"], input[type="submit"] {
   padding-left: 30px;
 }
 
-input[type="email"],
-input[type="password"] {
+#Login input[type="email"], #Login input[type="password"] {
   background-color: #d9d9d9;
 }
 
-.input-icon {
+#Login .input-icon {
   position: absolute; 
   left: 10px; 
   top: 50%;
@@ -62,12 +61,12 @@ input[type="password"] {
   fill: #555; 
 }
 
-#button input[type="submit"] {
+#Login #button input[type="submit"] {
 margin: 0px;
 margin-left: -9px;
 }
 
-input[type="submit"] {
+#Login input[type="submit"] {
   background-color: #f26651;
   color: white;
   height: 40px; 
@@ -80,12 +79,12 @@ input[type="submit"] {
   border: none;
 }
 
-input[type="submit"]:hover {
+#Login input[type="submit"]:hover {
   cursor: pointer;
   background-color: #ac4838;
 }
 
-.checkbox-forgot {
+#Login .checkbox-forgot {
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -93,11 +92,11 @@ input[type="submit"]:hover {
   width: 100%; 
 }
 
-label {
+#Login label {
   white-space: nowrap; 
 }
 
-input[type="checkbox"] {
+#Login input[type="checkbox"] {
   margin-right: 5px; 
 }
 
@@ -106,6 +105,6 @@ input[type="checkbox"] {
   text-decoration: none;
 }
 
-#SemConta {
+#Login #SemConta {
   color: #f26651;
 }

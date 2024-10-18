@@ -23,7 +23,7 @@ const Register: React.FC = () => {
   };
 
   return (
-    <>
+    <div id='Register'>
       <Header />
       <div className="register-container">
         <form className="register-form" onSubmit={handleSubmit}>
@@ -73,7 +73,7 @@ const Register: React.FC = () => {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
