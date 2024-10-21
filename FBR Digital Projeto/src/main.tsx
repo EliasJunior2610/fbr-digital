@@ -10,6 +10,7 @@ import Error404 from './components/Error404/Error404.tsx'
 import ServiceRequest from './components/ServiceRequest/ServiceRequest.tsx'
 import NewPlan from './components/NewPlan/NewPlan.tsx'
 import NewService from './components/NewService/NewService.tsx'
+import MyRequest from './components/MyRequest/MyRequest.tsx'
 
 const rotas = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ const rotas = createBrowserRouter([
   },
   {
     path: 'minhas-solicitacoes',
-    element: <div>Tem que fazer essa página ainda!</div>
+    element: <MyRequest />
   }, 
   {
     path: 'novo-plano',
