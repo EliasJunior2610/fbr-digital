@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import './NewPlan.css'
+import './NewService.css'
 
 
-export default function NewPlan() {
+export default function NewService() {
     useEffect(() => {
-        document.title = 'Novo Plano';
+        document.title = 'Novo Serviço';
     }, []);
 
     return (
-        <div id="NewPlan">
-            <h1>Novo Plano</h1>
+        <div id="NewService">
+            <h1>Novo Serviço</h1>
             <div id="lados">
                 <div id="etiqueta">
                     <div id="etiqueta-h2">
@@ -25,9 +25,9 @@ export default function NewPlan() {
                         <h4>Assinar agora</h4>
                     </div>
                 </div>
-                <form action="" id="novo-plano">
-                    <label htmlFor="plano">Plano:</label>
-                    <input type="text" id="plano" />
+                <form action="" id="novo-servico">
+                    <label htmlFor="plano">Serviço:</label>
+                    <input type="text" id="servico" />
 
                     <label htmlFor="preco">Preço/Mês:</label>
                     <input type="number" name="preco" id="preco" />

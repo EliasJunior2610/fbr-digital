@@ -9,6 +9,7 @@ import Forget from './components/Forget/Forget.tsx'
 import Error404 from './components/Error404/Error404.tsx'
 import ServiceRequest from './components/ServiceRequest/ServiceRequest.tsx'
 import NewPlan from './components/NewPlan/NewPlan.tsx'
+import NewService from './components/NewService/NewService.tsx'
 
 const rotas = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const rotas = createBrowserRouter([
   {
     path: 'novo-plano',
     element: <NewPlan />
+  },
+  {
+    path: 'novo-servico',
+    element: <NewService />
   }
 ])
 
