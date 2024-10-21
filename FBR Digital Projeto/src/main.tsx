@@ -1,35 +1,45 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Register from './components/Register/Register.tsx'
-import Login from './components/Login/Login.tsx'
-import Forget from './components/Forget/Forget.tsx'
-import Error404 from './components/Error404/Error404.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Register from "./components/Register/Register.tsx";
+import Login from "./components/Login/Login.tsx";
+import Forget from "./components/Forget/Forget.tsx";
+import Error404 from "./components/Error404/Error404.tsx";
+import RegisterProvider from "./components/RegisterProvider/RegisterProvider.tsx";
+import RegisterCliente from "./components/RegisterClient/RegisterClient.tsx";
 
 const rotas = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
-    errorElement: <Error404 />
+    errorElement: <Error404 />,
   },
   {
-    path: '/registro',
-    element: <Register />
+    path: "/registro",
+    element: <Register />,
   },
   {
-    path: '/login',
-    element: <Login />
+    path: "/login",
+    element: <Login />,
   },
   {
-    path: '/esqueceu',
-    element: <Forget />
-  }
-])
+    path: "/esqueceu",
+    element: <Forget />,
+  },
+  {
+    path: "/registroProvedor",
+    element: <RegisterProvider />,
+  },
+  {
+    path: "/registroCliente",
+    element: <RegisterCliente />,
+  },
+]);
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router = {rotas} />
-  </StrictMode>,
-)
+    <RouterProvider router={rotas} />
+  </StrictMode>
+);
