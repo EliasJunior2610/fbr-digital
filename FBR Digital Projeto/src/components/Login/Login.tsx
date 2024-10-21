@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import Header from "../Header/header";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
 export default function Login() {
+  useEffect(() => {
+    document.title = 'Login'
+  }, [])
+  
   return (
     <div id="Página">
       <Header />
@@ -22,9 +27,10 @@ export default function Login() {
               <input type="checkbox" name="" id="" />
               Lembre de mim
             </label>
-            <label htmlFor="">Esqueceu a senha?</label>
+            <Link to='/esqueceu'><label htmlFor="">Esqueceu a senha?</label></Link>
           </div>
           <div id="button"><input type="submit" value="Entrar" /></div>
+          <label htmlFor="" id="SemConta">Não tem conta?</label>
           <Link to="/registro"><label htmlFor="">Cadastrar-se</label></Link>
         </form>
       </div>

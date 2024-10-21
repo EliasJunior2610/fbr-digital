@@ -3,15 +3,19 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Register from './components/Registro/Registro.tsx'
+import Register from './components/Register/Register.tsx'
 import Login from './components/Login/Login.tsx'
 import Forget from './components/Forget/Forget.tsx'
+import Error404 from './components/Error404/Error404.tsx'
+import ServiceRequest from './components/ServiceRequest/ServiceRequest.tsx'
+import NewPlan from './components/NewPlan/NewPlan.tsx'
+import NewService from './components/NewService/NewService.tsx'
 
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <div><h1>Tem que criar uma página pro 404!</h1></div>
+    errorElement: <Error404 />
   },
   {
     path: '/registro',
@@ -22,8 +26,24 @@ const rotas = createBrowserRouter([
     element: <Login />
   },
   {
-    path: '/forget',
+    path: '/esqueceu',
     element: <Forget />
+  },
+  {
+    path: '/solicitacao',
+    element: <ServiceRequest />
+  },
+  {
+    path: 'minhas-solicitacoes',
+    element: <div>Tem que fazer essa página ainda!</div>
+  }, 
+  {
+    path: 'novo-plano',
+    element: <NewPlan />
+  },
+  {
+    path: 'novo-servico',
+    element: <NewService />
   }
 ])
 

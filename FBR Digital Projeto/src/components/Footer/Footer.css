@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#baseboard {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px;
+  background-color: #303434;
+  font-family: 'Dm Mono', monospace;
+  font-size: small;
+}
+
+#baseboard .linha {
+  background-color: white;
+  width: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#baseboard h2 {
+  color: #f26651;
+}
+
+#baseboard p {
+  color: white;
+}
+
+#baseboard img {
+  width: 130px;
+}
+
+#baseboard img:hover {
+  cursor: pointer;
+}

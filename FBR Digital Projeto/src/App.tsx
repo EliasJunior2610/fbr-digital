@@ -1,7 +1,12 @@
 import Header from "./components/Header/header";
-import Rodape from "./components/Rodape/Rodape";
+import Rodape from "./components/Footer/Footer";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = 'FBR Digital'
+  }, [])
+  
   return (
     <div id="App">
       <Header />
