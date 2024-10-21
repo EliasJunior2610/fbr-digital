@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#NewPlan {
+    font-family: 'DM Mono', monospace;
+}
+
+#NewPlan h1 {
+    color: #f26651;
+}
+
+#novo-plano {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+}
+
+#novo-plano label {
+    color: white;
+}
+
+#novo-plano input, #novo-plano textarea {
+    border-radius: 5px;
+}
+
+#novo-plano input[type='submit'] {
+    background-color: #34A752;
+    color: white;
+    padding: 5px;
+}
