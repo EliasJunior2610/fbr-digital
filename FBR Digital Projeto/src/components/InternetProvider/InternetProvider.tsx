@@ -1,28 +1,41 @@
-import Etiqueta from "../Etiqueta/Etiqueta";
+import { useEffect, useState } from "react";
 import './InternetProvider.css';
+import InternetPlans from "./InternetPlans/InternetPlans";
+import InternetServices from "./InternetServices/InternetServices";
 
 export default function InternetProvider() {
+    useEffect(() => {
+        document.title = 'Planos'
+    }, [])
+
+    const [etapa, setEtapa] = useState(1)
+
+    const nextStep = () => setEtapa(2)
+    const prevStep = () => setEtapa(1)
     return (
         <div id="InternetProvider">
-            <div id="etiquetas">
-                <Etiqueta 
-                    h2="100 MEGA" 
-                    h3="R$ 79,99/Mês" 
-                    p="Ideal para navegação moderada, redes sociais e vídeos em HD, com suporte para alguns dispositivos simultâneos." 
-                />
+            <div id="buttons">
+            <button
+              onClick={prevStep}
+              className={etapa === 1 ? "ativo" : "inativo"}
+            >
+              Cliente
+            </button>
+            <button
+              onClick={nextStep}
+              className={etapa === 2 ? "ativo" : "inativo"}
+            >
+              Provedor
+            </button>
 
-                <Etiqueta 
-                    h2="500 MEGA" 
-                    h3="R$ 99,99/Mês" 
-                    p="Perfeito para uso intenso, com suporte a vídeos 4K, jogos online e vários dispositivos conectados." 
-                />
+            <br /> <br />
 
-                <Etiqueta 
-                    h2="1000 MEGA" 
-                    h3="R$ 150,99/Mês" 
-                    p="Alta performance para grandes residências ou empresas, ideal para uploads, downloads e muitos usuários." 
-                />
-            </div>
+          </div>
+          <div id="conteudo">
+            {etapa === 1 && <InternetPlans />}
+            {etapa === 2 && <InternetServices />}
+          </div>
+
         </div>
     );
 }

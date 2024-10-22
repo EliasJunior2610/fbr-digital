@@ -2,3 +2,37 @@
     display: flex;
     justify-content: space-around;
 }
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+  }
+  
+  #buttons button {
+    border: none;
+    border-radius: 5px;
+    font-family: "DM Mono", monospace;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    padding: 10px 35px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  #buttons .ativo {
+    background-color: #f26651;
+    color: #ffffff;
+  }
+  
+  #buttons .inativo {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  #buttons button:hover {
+    background-color: #bb5242;
+    cursor: pointer;
+    color: #f2f2f2;
+  }
