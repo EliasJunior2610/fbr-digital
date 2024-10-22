@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import "./RegisterProvider.css";
 import { Link } from "react-router-dom";
+import estados from "./estados.json";
+
+interface Estado {
+  sigla: string;
+  nome: string;
+}
 
 interface FormData {
   campo1: string;
@@ -49,6 +55,8 @@ export default function RegisterProvider() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
   };
+
+  const estadosTyped: Estado[] = estados;
 
   return (
     <div id="Página">
@@ -145,10 +153,11 @@ export default function RegisterProvider() {
                   required
                 />
                 <datalist id="opcoes">
-                  <option value="Opção 1" />
-                  <option value="Opção 2" />
-                  <option value="Opção 3" />
-                  <option value="Opção 4" />
+                  {estadosTyped.map((estado: Estado) => (
+                    <option key={estado.sigla} value={estado.sigla}>
+                      {estado.nome}
+                    </option>
+                  ))}
                 </datalist>
               </div>
               <div id="input-container">

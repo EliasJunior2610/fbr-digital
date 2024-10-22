@@ -1,80 +1,44 @@
-import React, { useState } from 'react';
-import './Register.css'; 
-import Header from '../Header/header';
+import { useEffect, useState } from "react";
+import Header from "../Header/header";
+import RegisterClient from "../RegisterClient/RegisterClient";
+import RegisterProvider from "../RegisterProvider/RegisterProvider";
+import "./Register.css";
 
-const Register: React.FC = () => {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: '',
-    confirmPassword: ''
-  });
+export default function Register() {
+  useEffect(() => {
+    document.title = "Cadastro";
+  }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const [etapa, setEtapa] = useState(1);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
+  const nextStep = () => setEtapa(2);
+  const prevStep = () => setEtapa(1);
 
   return (
     <>
-      <Header />
-      <div className="register-container">
-        <form className="register-form" onSubmit={handleSubmit}>
-          <h2 className="register-title">Cadastrar-se</h2>
-          <div className="form-group">
-            <input
-              type="text"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
-              placeholder="Nome de Usuário"
-              required
-            />
+      <div id="pagina">
+        <Header />
+        <div id="registro">
+          <div id="buttons">
+            <button
+              onClick={prevStep}
+              className={etapa === 1 ? "ativo" : "inativo"}
+            >
+              Cliente
+            </button>
+            <button
+              onClick={nextStep}
+              className={etapa === 2 ? "ativo" : "inativo"}
+            >
+              Provedor
+            </button>
           </div>
-          <div className="form-group">
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="E-mail"
-              required
-            />
+          <div id="conteudo">
+            {etapa === 1 && <RegisterClient />}
+            {etapa === 2 && <RegisterProvider />}
           </div>
-          <div className="form-group">
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              placeholder="Senha"
-              required
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              name="confirmPassword"
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              placeholder="Confirmar Senha"
-              required
-            />
-          </div>
-          <button type="submit" className="register-button">
-            Cadastrar
-          </button>
-        </form>
+        </div>
       </div>
     </>
   );
-};
-
-export default Register;
+}
