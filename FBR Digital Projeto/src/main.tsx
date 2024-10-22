@@ -7,8 +7,7 @@ import Register from "./components/Register/Register.tsx";
 import Login from "./components/Login/Login.tsx";
 import Forget from "./components/Forget/Forget.tsx";
 import Error404 from "./components/Error404/Error404.tsx";
-import RegisterProvider from "./components/RegisterProvider/RegisterProvider.tsx";
-import RegisterCliente from "./components/RegisterClient/RegisterClient.tsx";
+import ReviewProvider from "./components/ReviewProvider/ReviewProvider.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -29,12 +28,8 @@ const rotas = createBrowserRouter([
     element: <Forget />,
   },
   {
-    path: "/registroProvedor",
-    element: <RegisterProvider />,
-  },
-  {
-    path: "/registroCliente",
-    element: <RegisterCliente />,
+    path: "/revisaoProvedor",
+    element: <ReviewProvider />,
   },
 ]);
 
