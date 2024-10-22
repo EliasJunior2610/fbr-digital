@@ -4,7 +4,7 @@ interface RequestProps {
     tipo: string;
     data: string;
     horario: string;
-    corBola: string; // Nova prop para definir a cor da bolinha
+    corBola: string; 
 }
 
 export default function Request({ tipo, data, horario, corBola }: RequestProps) {

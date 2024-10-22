@@ -11,6 +11,7 @@ import ServiceRequest from './components/ServiceRequest/ServiceRequest.tsx'
 import NewPlan from './components/NewPlan/NewPlan.tsx'
 import NewService from './components/NewService/NewService.tsx'
 import MyRequest from './components/MyRequest/MyRequest.tsx'
+import InternetProvider from './components/InternetProvider/InternetProvider.tsx'
 
 const rotas = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const rotas = createBrowserRouter([
   {
     path: 'novo-servico',
     element: <NewService />
+  },
+  {
+    path: 'internet-provedor',
+    element: <InternetProvider />
   }
 ])
 
