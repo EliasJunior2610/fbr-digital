@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap");
 
 #Login {
   text-align: center;
@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Dm Mono', monospace;
+  font-family: "Dm Mono", monospace;
   background-color: #303434;
 }
 
@@ -55,10 +55,10 @@
   position: absolute; 
   left: 10px; 
   top: 50%;
-  transform: translateY(-50%); 
-  width: 20px; 
-  height: 20px; 
-  fill: #555; 
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #555;
 }
 
 #Login #button input[type="submit"] {
@@ -69,13 +69,13 @@ margin-left: -9px;
 #Login input[type="submit"] {
   background-color: #f26651;
   color: white;
-  height: 40px; 
+  height: 40px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   padding: 1px;
-  line-height: 40px; 
-  width: 120%; 
+  line-height: 40px;
+  width: 120%;
   border: none;
 }
 
@@ -86,10 +86,10 @@ margin-left: -9px;
 
 #Login .checkbox-forgot {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  gap: 20px; 
-  width: 100%; 
+  gap: 20px;
+  width: 100%;
 }
 
 #Login label {
