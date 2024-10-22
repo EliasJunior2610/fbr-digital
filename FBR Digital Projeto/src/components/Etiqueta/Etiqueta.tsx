@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Etiqueta.css'
 
 interface EtiquetaProps {
@@ -20,7 +21,9 @@ export default function Etiqueta({ h2, h3, p }: EtiquetaProps) {
                 <p>{p}</p>
             </div>
             <div id="etiqueta-h4">
-                <h4>ASSINAR AGORA</h4>
+                <Link to='/solicitacao'>
+                    <h4>ASSINAR AGORA</h4>
+                </Link>
             </div>
         </div>
     )

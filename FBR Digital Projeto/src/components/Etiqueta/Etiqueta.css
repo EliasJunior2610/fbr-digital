@@ -41,3 +41,8 @@
 #etiqueta h2, #etiqueta p {
     color: white;
 }
+
+#etiqueta #etiqueta-h4 a {
+    text-decoration: none;
+    color: inherit;
+}
