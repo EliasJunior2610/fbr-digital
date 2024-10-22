@@ -19,13 +19,13 @@ export default function InternetProvider() {
               onClick={prevStep}
               className={etapa === 1 ? "ativo" : "inativo"}
             >
-              Cliente
+              Internet
             </button>
             <button
               onClick={nextStep}
               className={etapa === 2 ? "ativo" : "inativo"}
             >
-              Provedor
+              Serviços
             </button>
 
             <br /> <br />
