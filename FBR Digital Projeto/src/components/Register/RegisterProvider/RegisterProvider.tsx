@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./RegisterClient.css";
+import "./RegisterProvider.css";
 import { Link } from "react-router-dom";
 import estados from "./estados.json";
 
@@ -9,6 +9,7 @@ interface Estado {
 }
 
 interface FormData {
+  campo0: string;
   campo1: string;
   campo2: string;
   campo3: string;
@@ -20,16 +21,18 @@ interface FormData {
   campo9: string;
   campo10: string;
   campo11: string;
+  campo12: string;
 }
 
-export default function RegisterClient() {
+export default function RegisterProvider() {
   useEffect(() => {
-    document.title = "Cadastro Cliente";
+    document.title = "Cadastro Provedor";
   }, []);
 
   const [etapa, setEtapa] = useState(1);
 
   const [formData, setFormData] = useState<FormData>({
+    campo0: "",
     campo1: "",
     campo2: "",
     campo3: "",
@@ -41,6 +44,7 @@ export default function RegisterClient() {
     campo9: "",
     campo10: "",
     campo11: "",
+    campo12: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -55,9 +59,10 @@ export default function RegisterClient() {
   };
 
   const estadosTyped: Estado[] = estados;
+
   return (
     <div id="Página">
-      <div id="RegistroCliente">
+      <div id="RegistroProvedor">
         <form onSubmit={handleSubmit}>
           <h1>Registro</h1>
           {etapa === 1 && (
@@ -69,16 +74,27 @@ export default function RegisterClient() {
                   name="campo1"
                   value={formData.campo1}
                   onChange={handleChange}
-                  placeholder="Nome Completo:"
+                  placeholder="Nome da Empresa:"
+                  required
+                />
+              </div>
+              <div id="input-container">
+                <input
+                  type="text"
+                  id="campo2"
+                  name="campo2"
+                  value={formData.campo2}
+                  onChange={handleChange}
+                  placeholder="CNPJ:"
                   required
                 />
               </div>
               <div id="input-container">
                 <input
                   type="tel"
-                  id="campo2"
-                  name="campo2"
-                  value={formData.campo2}
+                  id="campo3"
+                  name="campo3"
+                  value={formData.campo3}
                   onChange={handleChange}
                   placeholder="Telefone:"
                   required
@@ -86,23 +102,12 @@ export default function RegisterClient() {
               </div>
               <div id="input-container">
                 <input
-                  type="email"
-                  id="campo3"
-                  name="campo3"
-                  value={formData.campo3}
-                  onChange={handleChange}
-                  placeholder="Email:"
-                  required
-                />
-              </div>
-              <div id="input-container">
-                <input
-                  type="password"
+                  type="text"
                   id="campo4"
                   name="campo4"
                   value={formData.campo4}
                   onChange={handleChange}
-                  placeholder="Senha:"
+                  placeholder="Email:"
                   required
                 />
               </div>
@@ -112,6 +117,17 @@ export default function RegisterClient() {
                   id="campo5"
                   name="campo5"
                   value={formData.campo5}
+                  onChange={handleChange}
+                  placeholder="Senha:"
+                  required
+                />
+              </div>
+              <div id="input-container">
+                <input
+                  type="password"
+                  id="campo6"
+                  name="campo6"
+                  value={formData.campo6}
                   onChange={handleChange}
                   placeholder="Confirmar-Senha:"
                   required
@@ -131,9 +147,9 @@ export default function RegisterClient() {
                 <input
                   type="text"
                   list="opcoes"
-                  id="campo6"
-                  name="campo6"
-                  value={formData.campo6}
+                  id="campo7"
+                  name="campo7"
+                  value={formData.campo7}
                   onChange={handleChange}
                   placeholder="Estado:"
                   required
@@ -149,11 +165,11 @@ export default function RegisterClient() {
               <div id="input-container">
                 <input
                   type="text"
-                  id="campo7"
-                  name="campo7"
-                  value={formData.campo7}
+                  id="campo0"
+                  name="campo0"
+                  value={formData.campo8}
                   onChange={handleChange}
-                  placeholder="Cidade:"
+                  placeholder="CEP:"
                   required
                 />
               </div>
@@ -164,7 +180,7 @@ export default function RegisterClient() {
                   name="campo8"
                   value={formData.campo8}
                   onChange={handleChange}
-                  placeholder="Logradouro:"
+                  placeholder="Cidade:"
                   required
                 />
               </div>
@@ -175,7 +191,7 @@ export default function RegisterClient() {
                   name="campo9"
                   value={formData.campo9}
                   onChange={handleChange}
-                  placeholder="Bairro:"
+                  placeholder="Logradouro:"
                   required
                 />
               </div>
@@ -186,7 +202,7 @@ export default function RegisterClient() {
                   name="campo10"
                   value={formData.campo10}
                   onChange={handleChange}
-                  placeholder="Número:"
+                  placeholder="Bairro:"
                   required
                 />
               </div>
@@ -196,6 +212,17 @@ export default function RegisterClient() {
                   id="campo11"
                   name="campo11"
                   value={formData.campo11}
+                  onChange={handleChange}
+                  placeholder="Número:"
+                  required
+                />
+              </div>
+              <div id="input-container">
+                <input
+                  type="text"
+                  id="campo12"
+                  name="campo12"
+                  value={formData.campo12}
                   onChange={handleChange}
                   placeholder="Complemento(opcional):"
                 />

@@ -12,8 +12,7 @@ import NewPlan from "./components/NewPlan/NewPlan.tsx";
 import NewService from "./components/NewService/NewService.tsx";
 import MyRequest from "./components/MyRequest/MyRequest.tsx";
 import InternetProvider from "./components/InternetProvider/InternetProvider.tsx";
-import RegisterProvider from "./components/RegisterProvider/RegisterProvider.tsx";
-import RegisterClient from "./components/RegisterClient/RegisterClient.tsx";
+import MainScreen from "./components/MainScreen/MainScreen.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -54,12 +53,8 @@ const rotas = createBrowserRouter([
     element: <InternetProvider />,
   },
   {
-    path: "/registroProvedor",
-    element: <RegisterProvider />,
-  },
-  {
-    path: "/registroCliente",
-    element: <RegisterClient />,
+    path: "/home",
+    element: <MainScreen />,
   },
 ]);
 
