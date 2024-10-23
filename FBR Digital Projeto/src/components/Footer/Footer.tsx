@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/Marca FBR.png";
 import "./Footer.css";
+import instagramLogo from '../../assets/instagram-logo.svg'
+import facebookLogo from '../../assets/facebook-logo.svg'
+import linkedinLogo from '../../assets/linkedin-logo.svg'
 
 function Rodape(){
   return (
@@ -22,6 +25,17 @@ function Rodape(){
           <p>comercial@fbrdigital.com.br</p>
           <p>0800 081 4034 | (81) 4040-4034</p>
           
+          <a href="https://www.instagram.com/fbrdigital" target="_blank" rel="noopener noreferrer">          
+            <img src={instagramLogo} alt="Logo do Instagram" />
+          </a>
+
+          <a href="https://www.facebook.com/conexaofbrdigital" target="_blank" rel="noopener noreferrer">          
+            <img src={facebookLogo} alt="Logo do Facebook" />
+          </a>
+          
+          <a href="https://il.linkedin.com/company/fbr-digital" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinLogo} alt="Logo do Linkedin" />
+          </a>
         </div>
     </div>
   );

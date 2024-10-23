@@ -31,3 +31,7 @@
 #baseboard img:hover {
   cursor: pointer;
 }
+
+#baseboard #ladoDireito img {
+  width: 35px;
+}
