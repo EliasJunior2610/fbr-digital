@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Header from "../Header/header";
 import RegisterClient from "./RegisterClient/RegisterClient";
 import RegisterProvider from "./RegisterProvider/RegisterProvider";
 import "./Register.css";
@@ -17,7 +16,6 @@ export default function Register() {
   return (
     <>
       <div id="paginaRegistro">
-        <Header />
         <div id="registro">
           <div id="buttons">
             <button
