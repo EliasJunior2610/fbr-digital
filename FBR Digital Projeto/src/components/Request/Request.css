@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#Request {
+    font-family: 'DM Mono', monospace;
+    background-color: #d6d7d7;
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    border-radius: 32px;
+}
+
+#Request #request-left-bola {
+    display: flex; 
+    gap: 5px;
+}
+
+#Request #request-left-bola h4 {
+    margin-top: 0;
+}
+#Request #bolinha {
+    width: 1px;
+    height: 1px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+#Request #divisor {
+    background-color: black;
+    width: 1px;
+    
+}
+
+#Request h4 {
+    font-weight: 300;
+}

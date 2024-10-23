@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#MyRequest {
+    font-family: 'DM Mono', monospace;
+    text-align: center;
+}
+
+#MyRequest h1 {
+    color: #f26651;
+}
+
+#MyRequest .requests {
+    display: flex;
+    justify-content: space-around;
+}

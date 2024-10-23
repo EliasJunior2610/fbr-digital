@@ -7,7 +7,13 @@ import Register from "./components/Register/Register.tsx";
 import Login from "./components/Login/Login.tsx";
 import Forget from "./components/Forget/Forget.tsx";
 import Error404 from "./components/Error404/Error404.tsx";
-import ReviewProvider from "./components/ReviewProvider/ReviewProvider.tsx";
+import ServiceRequest from "./components/ServiceRequest/ServiceRequest.tsx";
+import NewPlan from "./components/NewPlan/NewPlan.tsx";
+import NewService from "./components/NewService/NewService.tsx";
+import MyRequest from "./components/MyRequest/MyRequest.tsx";
+import InternetProvider from "./components/InternetProvider/InternetProvider.tsx";
+import RegisterProvider from "./components/RegisterProvider/RegisterProvider.tsx";
+import RegisterClient from "./components/RegisterClient/RegisterClient.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -28,8 +34,32 @@ const rotas = createBrowserRouter([
     element: <Forget />,
   },
   {
-    path: "/revisaoProvedor",
-    element: <ReviewProvider />,
+    path: "/solicitacao",
+    element: <ServiceRequest />,
+  },
+  {
+    path: "/minhas-solicitacoes",
+    element: <MyRequest />,
+  },
+  {
+    path: "/novo-plano",
+    element: <NewPlan />,
+  },
+  {
+    path: "/novo-servico",
+    element: <NewService />,
+  },
+  {
+    path: "/internet-provedor",
+    element: <InternetProvider />,
+  },
+  {
+    path: "/registroProvedor",
+    element: <RegisterProvider />,
+  },
+  {
+    path: "/registroCliente",
+    element: <RegisterClient />,
   },
 ]);
 

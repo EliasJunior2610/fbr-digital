@@ -15,23 +15,20 @@ export default function Register() {
   const prevStep = () => setEtapa(1);
 
   return (
-    <>
-      <div id="pagina">
-        <Header />
-        <div id="registro">
-          <div id="buttons">
-            <button
-              onClick={prevStep}
-              className={etapa === 1 ? "ativo" : "inativo"}
-            >
-              Cliente
-            </button>
-            <button
-              onClick={nextStep}
-              className={etapa === 2 ? "ativo" : "inativo"}
-            >
-              Provedor
-            </button>
+    <div id='Register'>
+      <Header />
+      <div className="register-container">
+        <form className="register-form" onSubmit={handleSubmit}>
+          <h2 className="register-title">Cadastrar-se</h2>
+          <div className="form-group">
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+              placeholder="Nome de Usuário"
+              required
+            />
           </div>
           <div id="conteudo">
             {etapa === 1 && <RegisterClient />}
@@ -39,6 +36,6 @@ export default function Register() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
