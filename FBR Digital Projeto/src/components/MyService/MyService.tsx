@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import './MyRequest.css';
-import Request from "./Request/Request";
+import '../MyRequest/MyRequest.css'
+import Request from "../MyRequest/Request/Request";
 
 export default function MyRequest() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -13,7 +13,7 @@ export default function MyRequest() {
     });
 
     useEffect(() => {
-        document.title = 'Minhas Solicitações';
+        document.title = 'Meus Serviços';
     }, []);
 
     const handleRequestClick = (tipo: string, data: string, horario: string, observacoes: string = '') => {
@@ -26,7 +26,7 @@ export default function MyRequest() {
     };
 
     const openEditPopup = () => {
-        setIsEditPopupVisible(true); 
+        setIsEditPopupVisible(true);
     };
 
     const handleConfirm = () => {
@@ -54,7 +54,7 @@ export default function MyRequest() {
 
     return (
         <div id="MyRequest">
-            <h1>Minhas Solicitações</h1>
+            <h1>Meus Serviços</h1>
             <br /> <br />
 
             <div className="requests">

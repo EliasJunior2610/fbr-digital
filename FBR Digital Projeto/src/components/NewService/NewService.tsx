@@ -1,11 +1,22 @@
-import { useEffect } from "react";
-import './NewService.css'
-
+import { useEffect, useState } from "react";
+import './NewService.css';
+import { Link } from "react-router-dom";
 
 export default function NewService() {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
     useEffect(() => {
         document.title = 'Novo Serviço';
     }, []);
+
+    const handleSubmit = (event: { preventDefault: () => void; }) => {
+        event.preventDefault();
+        setIsPopupVisible(true);
+    };
+
+    const closePopupAndRedirect = () => {
+        setIsPopupVisible(false);
+    };
 
     return (
         <div id="NewService">
@@ -25,21 +36,31 @@ export default function NewService() {
                         <h4>Assinar agora</h4>
                     </div>
                 </div>
-                <form action="" id="novo-servico">
-                    <label htmlFor="plano">Serviço:</label>
-                    <input type="text" id="servico" />
+                <form action="" id="novo-servico" onSubmit={handleSubmit}>
+                    <label htmlFor="servico">Serviço:</label>
+                    <input type="text" id="servico" required />
 
                     <label htmlFor="preco">Preço/Mês:</label>
-                    <input type="number" name="preco" id="preco" />
+                    <input type="number" name="preco" id="preco" required />
 
                     <label htmlFor="descricao">Descrição:</label>
-                    <textarea name="descricao" id="descricao"></textarea>
-            
-                    <div id="form-submit">  
+                    <textarea name="descricao" id="descricao" required></textarea>
+
+                    <div id="form-submit">
                         <input type="submit" value="Confirmar" />
                     </div>
                 </form>
             </div>
+
+            {isPopupVisible && (
+                <div className="popup">
+                    <div className="popup-content">
+                        <h2>Serviço Criado!</h2>
+                        <p>Você será redirecionado para a página principal agora.</p>
+                        <Link to='/'><button onClick={closePopupAndRedirect}>Concluir</button></Link>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
