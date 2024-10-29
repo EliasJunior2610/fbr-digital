@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#ReportRequest {
+font-family: 'DM Mono', monospace;
+width: 300px;
+text-align: center;
+background-color: #d8d8d8;
+border-radius: 23px;
+}
+
+#ReportRequest #titulo {
+    padding: 5px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+}
+
+#ReportRequest #titulo h3 {
+    color: white;
+    font-weight: 400;
+}
+
+#ReportRequest button {
+    background-color: red;
+    color: white;
+    font-family: 'DM Mono', monospace;
+    border-color: red;
+    padding: 7px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+
+#ReportRequest button:hover {
+    cursor: pointer;
+    background-color: rgb(202, 1, 1);
+    border-color: rgb(202, 1, 1);
+}
