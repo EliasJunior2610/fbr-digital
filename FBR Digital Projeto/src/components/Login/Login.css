@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap");
 
 #Login {
   text-align: center;
@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Dm Mono', monospace;
+  font-family: "Dm Mono", monospace;
   background-color: #303434;
 }
 
@@ -29,17 +29,19 @@
 }
 
 #Login input {
-  font-family: 'Dm Mono', monospace;
+  font-family: "Dm Mono", monospace;
 }
 
 #Login .input-container {
-  position: relative; 
-  width: 300px; 
-  margin-right: 30px; 
+  position: relative;
+  width: 300px;
+  margin-right: 30px;
 }
 
-#Login input[type="email"], #Login input[type="password"], #Login input[type="submit"] {
-  width: 100%; 
+#Login input[type="email"],
+#Login input[type="password"],
+#Login input[type="submit"] {
+  width: 100%;
   height: 35px;
   border-radius: 10px;
   font-size: 16px;
@@ -47,35 +49,36 @@
   padding-left: 30px;
 }
 
-#Login input[type="email"], #Login input[type="password"] {
+#Login input[type="email"],
+#Login input[type="password"] {
   background-color: #d9d9d9;
 }
 
 #Login .input-icon {
-  position: absolute; 
-  left: 10px; 
+  position: absolute;
+  left: 10px;
   top: 50%;
-  transform: translateY(-50%); 
-  width: 20px; 
-  height: 20px; 
-  fill: #555; 
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #555;
 }
 
 #Login #button input[type="submit"] {
-margin: 0px;
-margin-left: -9px;
+  margin: 0px;
+  margin-left: -9px;
 }
 
 #Login input[type="submit"] {
   background-color: #f26651;
   color: white;
-  height: 40px; 
+  height: 40px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 500;
   padding: 1px;
-  line-height: 40px; 
-  width: 120%; 
+  line-height: 40px;
+  width: 120%;
   border: none;
 }
 
@@ -86,18 +89,18 @@ margin-left: -9px;
 
 #Login .checkbox-forgot {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  gap: 20px; 
-  width: 100%; 
+  gap: 20px;
+  width: 100%;
 }
 
 #Login label {
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 #Login input[type="checkbox"] {
-  margin-right: 5px; 
+  margin-right: 5px;
 }
 
 #Login Link {
