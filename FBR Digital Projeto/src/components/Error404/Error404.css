@@ -1,28 +1,7 @@
 #Error404 {
   text-align: center;
-  background-color: #303434;
-  height: 100vh;
 }
 
-#Erro {
-  font-size: 100px;
-}
-
-#volta,
-#verificar,
-#notFound {
-  color: white;
-}
-
-#volta {
-  border-bottom: solid 2px #e95c47;
-}
-
-#volta,
-#verificar {
-  font-size: large;
-}
-
-#meio {
-  padding-top: 100px;
+#Error404 img {
+  width: 65%;
 }
