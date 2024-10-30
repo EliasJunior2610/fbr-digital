@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./InternetProvider.css";
 import InternetPlans from "./InternetPlans/InternetPlans";
 import InternetServices from "./InternetServices/InternetServices";
-import Header from "../Header/header";
+import Header from "../Header/headerCliente";
 
 export default function InternetProvider() {
   useEffect(() => {

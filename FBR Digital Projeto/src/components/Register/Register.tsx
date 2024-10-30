@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-import { useEffect, useState } from "react";
-import RegisterClient from "./RegisterClient/RegisterClient";
-import RegisterProvider from "./RegisterProvider/RegisterProvider";
-import "./Register.css";
-=======
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Register.css'; 
-import Header from '../Header/headerCliente';
->>>>>>> 9d23af9675514975d09613c0b304d56299406d64
+// import Header from '../Header/headerCliente';
+import RegisterClient from './RegisterClient/RegisterClient';
+import RegisterProvider from './RegisterProvider/RegisterProvider';
+
 
 export default function Register() {
   useEffect(() => {
