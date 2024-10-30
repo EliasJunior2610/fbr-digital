@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
 
-.register-container {
+#Register .register-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
   font-family: 'Dm Mono', monospace;
 }
 
-.register-header {
+#Register .register-header {
   display: flex;
   justify-content: column; 
   align-items: column; 
@@ -19,17 +19,17 @@
   background-color: #333;
 }
 
-.logo {
+#Register .logo {
   width: 150px; 
 }
 
-.user-icon {
+#Register .user-icon {
   font-size: 24px;
   color: #fff;
 }
 
 
-.register-form {
+#Register .register-form {
   background-color: #333;
   padding: 15px;
   border-radius: 10px;
@@ -39,14 +39,14 @@
 }
 
 
-.register-title {
+#Register .register-title {
   color: #ff6b61;
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="password"] {
+#Register .form-group input[type="text"], #Register .form-group input[type="email"], #Register .form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -59,7 +59,7 @@
 }
 
 
-.register-button {
+#Register .register-button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -72,6 +72,6 @@
   transition: background-color 0.3s ease;
 }
 
-.register-button:hover {
+#Register .register-button:hover {
   background-color: #e65a50;
 }

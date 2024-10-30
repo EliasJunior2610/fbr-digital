@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+
+#Report h1 {
+    font-family: 'DM Mono', monospace;
+    color: #f26651;
+    text-align: center;
+}
+
+#Report .linha {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+}
+
