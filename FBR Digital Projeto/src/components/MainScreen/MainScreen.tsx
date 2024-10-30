@@ -2,6 +2,7 @@ import Header from "../Header/header";
 import imagem1 from "../../assets/MainScreen.png";
 import imagem2 from "../../assets/MainScreen 2.png";
 import Footer from "../Footer/Footer";
+import Carrosel from "./Carrosel/Carrosel";
 import { useEffect } from "react";
 import "./MainScreen.css";
 
@@ -51,7 +52,13 @@ export default function MainScreen() {
             </div>
           </div>
         </div>
-        <h2 className="Titulo-secundario">Entre em contato com provedores:</h2>
+
+        <div id="carroselHome">
+          <h2 className="Titulo-secundario">
+            Entre em contato com provedores:
+          </h2>
+          <Carrosel />
+        </div>
       </div>
       <Footer />
     </>
