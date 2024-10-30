@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .carrosel-button {
@@ -11,13 +12,22 @@
   padding: 10px;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 40px;
+  margin: 10px;
 }
 
 .carrosel-content {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   overflow: hidden;
-  width: 700px; /* Largura para acomodar três itens */
+  width: 700px;
+}
+
+.carrosel-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }
 
 .carrosel-item {
@@ -51,7 +61,7 @@
 
 .contratar-button {
   padding: 8px 12px;
-  background-color: #f26651; /* Cor de fundo atualizada */
+  background-color: #f26651;
   color: white;
   border: none;
   border-radius: 5px;
@@ -60,5 +70,5 @@
 }
 
 .contratar-button:hover {
-  background-color: #c95644; /* Cor de fundo atualizada ao passar o mouse */
+  background-color: #c95644;
 }
