@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./InternetProvider.css";
 import InternetPlans from "./InternetPlans/InternetPlans";
 import InternetServices from "./InternetServices/InternetServices";
+import Header from "../Header/header";
 
 export default function InternetProvider() {
   useEffect(() => {
@@ -14,18 +15,19 @@ export default function InternetProvider() {
   const prevStep = () => setEtapa(1);
   return (
     <div id="InternetProvider">
+      <Header />
       <div id="buttons">
         <button
           onClick={prevStep}
           className={etapa === 1 ? "ativo" : "inativo"}
         >
-          Cliente
+          Internet
         </button>
         <button
           onClick={nextStep}
           className={etapa === 2 ? "ativo" : "inativo"}
         >
-          Provedor
+          Serviços
         </button>
         <br /> <br />
       </div>
