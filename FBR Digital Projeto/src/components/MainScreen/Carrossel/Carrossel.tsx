@@ -1,43 +1,49 @@
 import React, { useState } from "react";
 import "./Carrossel.css";
+import { Link } from "react-router-dom";
 
 const Carrosel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const items = [
     {
-      nome: "Serviço 1",
-      descricao: "Descrição do Serviço 1",
+      nome: "Provedor 1",
+      descricao: "Descrição do Provedor 1",
       imagem: "https://via.placeholder.com/50",
     },
     {
-      nome: "Serviço 2",
-      descricao: "Descrição do Serviço 2",
+      nome: "Provedor 2",
+      descricao: "Descrição do Provedor 2",
       imagem: "https://via.placeholder.com/50",
     },
     {
-      nome: "Serviço 3",
-      descricao: "Descrição do Serviço 3",
+      nome: "Provedor 3",
+      descricao: "Descrição do Provedor 3",
       imagem: "https://via.placeholder.com/50",
     },
     {
-      nome: "Serviço 4",
-      descricao: "Descrição do Serviço 4",
+      nome: "Provedor 4",
+      descricao: "Descrição do Provedor 4",
       imagem: "https://via.placeholder.com/50",
     },
     {
-      nome: "Serviço 5",
-      descricao: "Descrição do Serviço 5",
+      nome: "Provedor 5",
+      descricao: "Descrição do Provedor 5",
       imagem: "https://via.placeholder.com/50",
     },
     {
-      nome: "Serviço 6",
-      descricao: "Descrição do Serviço 6",
+      nome: "Provedor 6",
+      descricao: "Descrição do Provedor 6",
+      imagem: "https://via.placeholder.com/50",
+    },
+    {
+      nome: "Provedor 7",
+      descricao: "Descrição do Provedor 7",
       imagem: "https://via.placeholder.com/50",
     },
   ];
 
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -61,14 +67,40 @@ const Carrosel: React.FC = () => {
         {"<"}
       </button>
       <div className="carrosel-content">
-        {visibleItems.map((item, index) => (
-          <div key={index} className="carrosel-item">
-            <img src={item.imagem} alt={item.nome} className="carrosel-image" />
-            <h3>{item.nome}</h3>
-            <p>{item.descricao}</p>
-            <button className="contratar-button">Contratar</button>
-          </div>
-        ))}
+        <div className="carrosel-row">
+          {visibleItems.slice(0, itemsPerPage / 2).map((item, index) => (
+            <div key={index} className="carrosel-item">
+              <img
+                src={item.imagem}
+                alt={item.nome}
+                className="carrosel-image"
+              />
+              <h3>{item.nome}</h3>
+              <p>{item.descricao}</p>
+              <Link to="/internet-provedor">
+                <button className="contratar-button">Contratar</button>
+              </Link>
+            </div>
+          ))}
+        </div>
+        <div className="carrosel-row">
+          {visibleItems
+            .slice(itemsPerPage / 2, itemsPerPage)
+            .map((item, index) => (
+              <div key={index} className="carrosel-item">
+                <img
+                  src={item.imagem}
+                  alt={item.nome}
+                  className="carrosel-image"
+                />
+                <h3>{item.nome}</h3>
+                <p>{item.descricao}</p>
+                <Link to="/internet-provedor">
+                  <button className="contratar-button">Contratar</button>
+                </Link>
+              </div>
+            ))}
+        </div>
       </div>
       <button onClick={nextSlide} className="carrosel-button">
         {">"}
