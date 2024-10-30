@@ -8,6 +8,8 @@ export default function Report() {
     }, [])
     return (
         <div id="Report">
+            <h1>Relatórios</h1>
+            
             <div className="linha">
                 <ReportRequest title="Solicitação Confirmada" provider="GravataNet" client="João Vitor" date="08/09/2024" corTitulo="#34A752" />
 
