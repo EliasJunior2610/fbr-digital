@@ -33,7 +33,7 @@ function Rodape() {
             <img src={facebookLogo} alt="Logo do Facebook" />
           </a>
           
-          <a href="https://il.linkedin.com/company/fbr-digital" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/fbr-digital/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinLogo} alt="Logo do Linkedin" />
           </a>
         </div>
