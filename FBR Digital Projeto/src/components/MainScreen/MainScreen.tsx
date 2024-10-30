@@ -2,7 +2,7 @@ import Header from "../Header/header";
 import imagem1 from "../../assets/MainScreen.png";
 import imagem2 from "../../assets/MainScreen 2.png";
 import Footer from "../Footer/Footer";
-import Carrosel from "./Carrosel/Carrosel";
+import Carrosel from "./Carrossel/Carrossel";
 import { useEffect } from "react";
 import "./MainScreen.css";
 

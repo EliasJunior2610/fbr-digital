@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Carrosel.css";
+import "./Carrossel.css";
 
 const Carrosel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
