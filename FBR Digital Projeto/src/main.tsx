@@ -1,5 +1,5 @@
-import MyService from './components/MyService/MyService.tsx';
-import Report from './components/Report/Report.tsx';
+import MyService from "./components/MyService/MyService.tsx";
+import Report from "./components/Report/Report.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
@@ -20,7 +20,7 @@ import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 const rotas = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MainScreen />,
     errorElement: <Error404 />,
   },
   {
@@ -62,10 +62,6 @@ const rotas = createBrowserRouter([
   {
     path: "/relatorio",
     element: <Report />,
-  },
-  {
-    path: "/home",
-    element: <MainScreen />,
   },
   {
     path: "/carrosel",
