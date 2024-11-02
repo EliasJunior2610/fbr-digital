@@ -1,9 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
 
-#Report h1 {
+#Report {
     font-family: 'DM Mono', monospace;
+}
+
+#Report h1 {
     color: #f26651;
     text-align: center;
+}
+
+#Report #filtro {
+    background-color: #929292;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Report #filtro #classificacao {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+#Report #filtro #classificacao h3 {
+    color: white;
+    font-weight: 300;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;    
+}
+
+#Report #filtro #data {
+    display: block;
+    text-align: center;
+}
+
+#Report #filtro #data input[type="date"] {
+    background-color: #d9d9d9;
+    font-family: 'DM Mono', monospace;
+    margin: 10px;
+    border: 0;
+}
+
+#Report #filtro #data input[type="date"]:hover {
+    cursor: pointer;
+}
+
+#Report #filtro #data input[type="submit"] {
+    font-family: 'DM Mono', monospace;
+    background-color: #34A752;
+    color: white;
+    border: 0;
+    padding: 5px;
+}
+
+#Report #filtro #data input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #2e994b;
 }
 
 #Report .linha {
@@ -11,4 +67,3 @@
     justify-content: space-around;
     margin: 40px;
 }
-
