@@ -1,0 +1,74 @@
+.carrosel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.carrosel-button {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.carrosel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow: hidden;
+  width: 700px;
+}
+
+.carrosel-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.carrosel-item {
+  width: 200px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.carrosel-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.carrosel-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.carrosel-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contratar-button {
+  padding: 8px 12px;
+  background-color: #f26651;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.contratar-button:hover {
+  background-color: #c95644;
+}

@@ -5,7 +5,7 @@ import instagramLogo from '../../assets/instagram-logo.svg'
 import facebookLogo from '../../assets/facebook-logo.svg'
 import linkedinLogo from '../../assets/linkedin-logo.svg'
 
-function Rodape(){
+function Rodape() {
   return (
     <div id="baseboard">
         <div id="ladoEsquerdo">
@@ -33,12 +33,12 @@ function Rodape(){
             <img src={facebookLogo} alt="Logo do Facebook" />
           </a>
           
-          <a href="https://il.linkedin.com/company/fbr-digital" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/fbr-digital/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinLogo} alt="Logo do Linkedin" />
           </a>
         </div>
     </div>
   );
-};
+}
 
 export default Rodape;
