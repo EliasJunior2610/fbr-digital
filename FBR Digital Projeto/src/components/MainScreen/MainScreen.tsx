@@ -1,4 +1,4 @@
-import Header from "../Header/headerCliente";
+import Header from "../HeaderProvedor/headerProvedor";
 import imagem1 from "../../assets/MainScreen.png";
 import imagem2 from "../../assets/MainScreen 2.png";
 import Footer from "../Footer/Footer";

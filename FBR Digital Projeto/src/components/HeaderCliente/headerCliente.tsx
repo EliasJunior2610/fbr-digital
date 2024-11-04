@@ -68,8 +68,8 @@ export default function MenuAppBar() {
               sx={{ maxHeight: 100 }}
             />
           <Stack direction="row" sx={{mx:"auto"}}>
-            <Button color="inherit" sx={{mx:"auto"}}>Meus Pedidos</Button>
-            <Button color="inherit" sx={{mx:"auto"}}>Histórico</Button>
+            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = '/minhas-solicitacoes'}>Meus Pedidos</Button>
+            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = '/minhas-solicitacoes'}>Histórico</Button>
           </Stack>
           </Box>
           <Box>

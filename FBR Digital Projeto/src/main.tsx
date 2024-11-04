@@ -2,7 +2,6 @@ import MyService from "./components/MyService/MyService.tsx";
 import Report from "./components/Report/Report.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./components/Register/Register.tsx";
