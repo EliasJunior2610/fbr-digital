@@ -19,6 +19,7 @@ export default function Report() {
                 </div>
                 <form id="data">
                     <input type="date" name="data" id="data" />
+                    <input type="submit" value="Cancelar" />
                     <input type="submit" value="Filtrar" />
                 </form>
             </div>
