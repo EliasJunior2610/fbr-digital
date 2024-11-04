@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import ReportRequest from "./ReportRequest/ReportRequest"
 import './Report.css'
+import filter from '../../assets/filter-icon.svg'
 
 export default function Report() {
     useEffect(() => {
@@ -12,11 +13,8 @@ export default function Report() {
             
             <div id="filtro">
                 <div id="classificacao">
-                    <h3 style={{backgroundColor: '#34A752'}}>Realizados</h3>
-                    
-                    <h3 style={{backgroundColor: '#EABE2E'}}>Pendentes</h3>
-
-                    <h3 style={{backgroundColor: '#F26651'}}>Recusados</h3>
+                    <img src={filter} alt="Filtro do Relatório" />
+                    <h3 style={{color: 'white'}}>Relatório Geral</h3>
 
                 </div>
                 <form id="data">

@@ -10,7 +10,7 @@
 }
 
 #Report #filtro {
-    background-color: #929292;
+    background-color: #f26651;
     margin-left: 5vw;
     margin-right: 5vw;
     border-radius: 20px;
@@ -24,13 +24,14 @@
     width: 50vw;
 }
 
+#Report #filtro #classificacao img {
+    width: 38px;
+}
+
 #Report #filtro #classificacao h3 {
-    color: white;
     font-weight: 300;
-    padding: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 12px;    
+    text-align: center;
+    padding-left: 125px;
 }
 
 #Report #filtro #data {
@@ -51,7 +52,7 @@
 
 #Report #filtro #data input[type="submit"] {
     font-family: 'DM Mono', monospace;
-    background-color: #34A752;
+    background-color: #f26651;
     color: white;
     border: 0;
     padding: 5px;
@@ -59,7 +60,7 @@
 
 #Report #filtro #data input[type="submit"]:hover {
     cursor: pointer;
-    background-color: #2e994b;
+    background-color: #da5a46;
 }
 
 #Report .linha {
