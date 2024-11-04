@@ -1,5 +1,5 @@
 import './forget.css'
-import Header from "../Header/header";
+import Header from "../HeaderCliente/headerCliente";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
