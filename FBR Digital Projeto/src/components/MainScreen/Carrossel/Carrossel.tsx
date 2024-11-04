@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./Carrossel.css";
 import { Link } from "react-router-dom";
+import imagem1 from "./Carrosel-assets/empresa 1.png";
+import imagem2 from "./Carrosel-assets/empresa 2.png";
+import imagem3 from "./Carrosel-assets/empresa 3.png";
+import imagem4 from "./Carrosel-assets/empresa 4.png";
+import imagem5 from "./Carrosel-assets/empresa 5.png";
+import imagem6 from "./Carrosel-assets/empresa 6.png";
+import imagem7 from "./Carrosel-assets/empresa 7.png";
 
 const Carrosel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,37 +16,37 @@ const Carrosel: React.FC = () => {
     {
       nome: "Provedor 1",
       descricao: "Descrição do Provedor 1",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem1,
     },
     {
       nome: "Provedor 2",
       descricao: "Descrição do Provedor 2",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem2,
     },
     {
       nome: "Provedor 3",
       descricao: "Descrição do Provedor 3",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem3,
     },
     {
       nome: "Provedor 4",
       descricao: "Descrição do Provedor 4",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem4,
     },
     {
       nome: "Provedor 5",
       descricao: "Descrição do Provedor 5",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem5,
     },
     {
       nome: "Provedor 6",
       descricao: "Descrição do Provedor 6",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem6,
     },
     {
       nome: "Provedor 7",
       descricao: "Descrição do Provedor 7",
-      imagem: "https://via.placeholder.com/50",
+      imagem: imagem7,
     },
   ];
 
