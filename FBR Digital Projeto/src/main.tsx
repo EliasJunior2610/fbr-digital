@@ -16,6 +16,7 @@ import InternetProvider from "./components/InternetProvider/InternetProvider.tsx
 import MainScreen from "./components/MainScreen/MainScreen.tsx";
 import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 import MainProvider from "./components/MainScreenProvider/MainScreenProvider.tsx";
+import MainScreenFBR from "./components/MainScreenFBR/MainScreenFBR.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const rotas = createBrowserRouter([
   {
     path: "/provedor",
     element: <MainProvider />,
+  },
+  {
+    path: "/FBR",
+    element: <MainScreenFBR />,
   },
 ]);
 
