@@ -68,3 +68,40 @@
     justify-content: space-around;
     margin: 40px;
 }
+
+#Report .popup {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 60vh;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#Report .popup h4 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#Report .popup div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#Report .popup button {
+    background-color: #F26651;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#Report .popup button:hover {
+    background-color: #D9543D;
+}
