@@ -16,6 +16,10 @@
   margin: 10px;
 }
 
+.carrosel-button:hover {
+  background-color: #8c3b2f;
+}
+
 .carrosel-content {
   display: flex;
   flex-direction: column;
