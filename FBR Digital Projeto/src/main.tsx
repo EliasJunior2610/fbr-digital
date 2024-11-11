@@ -68,7 +68,7 @@ const rotas = createBrowserRouter([
     element: <Carrosel />,
   },
   {
-    path: "/mainProvider",
+    path: "/provedor",
     element: <MainProvider />,
   },
 ]);
