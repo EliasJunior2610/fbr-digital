@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import '../MyRequest/MyRequest.css'
 import Request from "../MyRequest/Request/Request";
+import MenuAppBar from "../HeaderProvedor/headerProvedor";
 
 export default function MyRequest() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -54,6 +55,7 @@ export default function MyRequest() {
 
     return (
         <div id="MyRequest">
+            <MenuAppBar />
             <h1>Meus Serviços</h1>
             <br /> <br />
 

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './NewService.css';
 import { Link } from "react-router-dom";
+import MenuAppBar from "../HeaderCliente/headerCliente";
 
 export default function NewService() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -20,6 +21,7 @@ export default function NewService() {
 
     return (
         <div id="NewService">
+            <MenuAppBar />
             <h1>Novo Serviço</h1>
             <div id="lados">
                 <div id="etiqueta">

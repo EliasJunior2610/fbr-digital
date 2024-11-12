@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './ServiceRequest.css';
 import { Link } from "react-router-dom";
+import MenuAppBar from "../HeaderCliente/headerCliente";
 
 export default function ServiceRequest() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -20,6 +21,7 @@ export default function ServiceRequest() {
 
     return (
         <div id="ServiceRequest">
+            <MenuAppBar />
             <h1 id="solicitar">Solicitação de Serviço</h1>
             <form action="" id="servico" onSubmit={handleSubmit}>
                 <label htmlFor="service-type">Tipo de serviço:</label>
