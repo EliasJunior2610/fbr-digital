@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './NewPlan.css';
 import { Link } from "react-router-dom";
+import MenuAppBar from "../HeaderProvedor/headerProvedor";
 
 export default function NewPlan() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -20,6 +21,7 @@ export default function NewPlan() {
 
     return (
         <div id="NewPlan">
+            <MenuAppBar />
             <h1>Novo Plano</h1>
             <div id="lados">
                 <div id="etiqueta">

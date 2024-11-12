@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "../Header/headerCliente";
+import Header from "../HeaderCliente/headerCliente";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
