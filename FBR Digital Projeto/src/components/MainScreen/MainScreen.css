@@ -1,0 +1,93 @@
+.Titulo-secundario {
+  font-size: 2rem;
+  text-align: center;
+  color: lightgrey;
+}
+
+#paginaPrincipal {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Dm Mono", monospace;
+  background-color: #303434;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#section1 {
+  position: relative;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-main {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 43%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#section2 {
+  flex-direction: row;
+  margin: 80px 0;
+}
+
+.text-box {
+  margin-left: 20px;
+}
+
+.text-box h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: lightgrey;
+}
+
+.text-box p {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-left: 30px;
+  color: lightgrey;
+  line-height: 1.5;
+}
+
+#imagem1 {
+  border-radius: 10px;
+}
+
+#imagem2 {
+  border-radius: 10px;
+}
+
+#carroselHome {
+  margin-bottom: 200px;
+}

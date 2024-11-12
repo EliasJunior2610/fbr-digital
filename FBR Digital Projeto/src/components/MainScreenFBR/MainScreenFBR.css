@@ -1,0 +1,57 @@
+#MainScreenFBR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 80px;
+  margin-bottom: 250px;
+}
+
+#conteudoFBR {
+  display: grid;
+  margin: 10px;
+  max-width: 500px;
+}
+
+#conteudoFBR-item {
+  background: #d9d9d9;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#conteudoFBR-item h2 {
+  text-align: center;
+  color: #f26651;
+  font-size: 33px;
+}
+
+#conteudoFBR-item p {
+  text-align: left;
+  font-size: 20px;
+  margin: 70px;
+}
+
+#conteudoFBR-item a {
+  text-decoration: none;
+}
+
+#buttonFBR {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#buttonFBR button {
+  background: #f26651;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#buttonFBR button:hover {
+  background: #d1523f;
+}
