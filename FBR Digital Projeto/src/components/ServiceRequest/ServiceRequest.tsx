@@ -20,8 +20,9 @@ export default function ServiceRequest() {
     };
 
     return (
+        <>
+        <MenuAppBar />
         <div id="ServiceRequest">
-            <MenuAppBar />
             <h1 id="solicitar">Solicitação de Serviço</h1>
             <form action="" id="servico" onSubmit={handleSubmit}>
                 <label htmlFor="service-type">Tipo de serviço:</label>
@@ -54,5 +55,6 @@ export default function ServiceRequest() {
                 </div>
             )}
         </div>
+        </>
     );
 }
