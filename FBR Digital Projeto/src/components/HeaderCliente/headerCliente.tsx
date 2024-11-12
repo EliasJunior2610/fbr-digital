@@ -4,13 +4,10 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormGroup from "@mui/material/FormGroup";
-// import MenuItem from "@mui/material/MenuItem";
-// import Menu from "@mui/material/Menu";
 import { Button, Stack, Typography } from "@mui/material";
 import logo from "../../assets/Marca FBR.png";
 
@@ -26,10 +23,6 @@ export default function MenuAppBar() {
     setAnchorEl(event.currentTarget);
   };
 
-  // const handleClose = () => {
-  //   setAnchorEl(null);
-  // };
-
   return (
     <Box
       display="flex"
@@ -39,16 +32,7 @@ export default function MenuAppBar() {
     >
       <AppBar position="static" sx={{ backgroundColor: "#212121" }}>
         <Toolbar>
-          <Box display="flex" alignItems="center" sx={{flexGrow:1}}>
-            {/* <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <MenuIcon />
-            </IconButton> */}
+          <Box display="flex" alignItems="center" sx={{ flexGrow: 1 }}>
             <FormGroup>
               <FormControlLabel
                 control={
@@ -61,48 +45,68 @@ export default function MenuAppBar() {
                 label={auth ? "Logout" : "Login"}
               />
             </FormGroup>
-            <Box
-              component="img"
-              src={logo}
-              alt="Logo da Empresa"
-              sx={{ maxHeight: 100 }}
-            />
-          <Stack direction="row" sx={{mx:"auto"}}>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/minhas-solicitacoes'}>Meus Pedidos</Button>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Histórico</Button>
-          </Stack>
+            <IconButton onClick={() => (window.location.href = "/")}>
+              <Box
+                component="img"
+                src={logo}
+                alt="Logo da Empresa"
+                sx={{ maxHeight: 100 }}
+              />
+            </IconButton>
+            <Stack direction="row" sx={{ mx: "auto" }}>
+              <Button
+                color="inherit"
+                sx={{ mx: "auto" }}
+                onClick={() =>
+                  (window.location.href = auth
+                    ? "/login"
+                    : "/minhas-solicitacoes")
+                }
+              >
+                Meus Pedidos
+              </Button>
+              <Button
+                color="inherit"
+                sx={{ mx: "auto" }}
+                onClick={() =>
+                  (window.location.href = auth ? "/login" : "/historico")
+                }
+              >
+                Histórico
+              </Button>
+            </Stack>
           </Box>
           <Box>
             {auth ? (
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
-                >
-                    <Stack
-                    direction="column"
-                    alignItems="center"
-                    onClick={() => window.location.href = '/login'}
-                    sx={{ cursor: 'pointer' }}
-                    >
-                    <AccountCircle />
-                    <Typography>Entre ou Cadastre-se</Typography>
-                    </Stack>
-                </IconButton>
-            ) : (
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <Stack
+                  direction="column"
+                  alignItems="center"
+                  onClick={() => (window.location.href = "/login")}
+                  sx={{ cursor: "pointer" }}
                 >
                   <AccountCircle />
-                </IconButton>
+                  <Typography>Entre ou Cadastre-se</Typography>
+                </Stack>
+              </IconButton>
+            ) : (
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
             )}
           </Box>
         </Toolbar>

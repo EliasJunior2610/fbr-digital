@@ -36,7 +36,7 @@ export default function MenuAppBar() {
     >
       <AppBar position="static" sx={{ backgroundColor: "#212121" }}>
         <Toolbar>
-          <Box display="flex" alignItems="center" sx={{flexGrow:1}}>
+          <Box display="flex" alignItems="center" sx={{ flexGrow: 1 }}>
             <FormGroup>
               <FormControlLabel
                 control={
@@ -49,49 +49,74 @@ export default function MenuAppBar() {
                 label={auth ? "Logout" : "Login"}
               />
             </FormGroup>
-            <Box
-              component="img"
-              src={logo}
-              alt="Logo da Empresa"
-              sx={{ maxHeight: 100 }}
-            />
-          <Stack direction="row" sx={{mx:"auto"}}>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Meus Clientes</Button>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/meus-servicos'}>Meus Serviços</Button>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Meus Produtos</Button>
-          </Stack>
+            <IconButton onClick={() => (window.location.href = "/provedor")}>
+              {" "}
+              <Box
+                component="img"
+                src={logo}
+                alt="Logo da Empresa"
+                sx={{ maxHeight: 100 }}
+              />
+            </IconButton>
+            <Stack direction="row" sx={{ mx: "auto" }}>
+              <Button
+                color="inherit"
+                sx={{ mx: "auto" }}
+                onClick={() =>
+                  (window.location.href = auth ? "/login" : "/meus-clientes")
+                }
+              >
+                Meus Clientes
+              </Button>
+              <Button
+                color="inherit"
+                sx={{ mx: "auto" }}
+                onClick={() =>
+                  (window.location.href = auth ? "/login" : "/meus-servicos")
+                }
+              >
+                Meus Serviços
+              </Button>
+              <Button
+                color="inherit"
+                sx={{ mx: "auto" }}
+                onClick={() => (window.location.href = auth ? "/login" : "/")}
+              >
+                Meus Produtos
+              </Button>
+            </Stack>
           </Box>
           <Box>
             {auth ? (
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
-                >
-                    <Stack
-                    direction="column"
-                    alignItems="center"
-                    onClick={() => window.location.href = '/login'}
-                    sx={{ cursor: 'pointer' }}
-                    >
-                    <AccountCircle />
-                    <Typography></Typography>
-                    </Stack>
-                </IconButton>
-            ) : (
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu}
-                  color="inherit"
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <Stack
+                  direction="column"
+                  alignItems="center"
+                  onClick={() => (window.location.href = "/login")}
+                  sx={{ cursor: "pointer" }}
                 >
                   <AccountCircle />
-                </IconButton>
+                  <Typography></Typography>
+                </Stack>
+              </IconButton>
+            ) : (
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleMenu}
+                color="inherit"
+              >
+                <AccountCircle />
+              </IconButton>
             )}
           </Box>
         </Toolbar>

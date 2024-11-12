@@ -1,0 +1,39 @@
+.Clientes-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.Clientes-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f26651;
+}
+
+.Clientes-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.Clientes-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #4d4b4b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #222525;
+}
+
+.Clientes-item div {
+  color: white;
+}
+
+.Clientes-item strong {
+  font-size: 0.9em;
+  color: #f26651;
+}
