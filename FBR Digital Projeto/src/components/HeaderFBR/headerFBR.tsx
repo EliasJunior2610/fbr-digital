@@ -56,9 +56,9 @@ export default function MenuAppBar() {
               sx={{ maxHeight: 100 }}
             />
           <Stack direction="row" sx={{mx:"auto"}}>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Meus Clientes</Button>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/meus-servicos'}>Meus Serviços</Button>
-            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Meus Produtos</Button>
+            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/relatorio'}>Meus Relatórios</Button>
+            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Provedores</Button>
+            <Button color="inherit" sx={{mx:"auto"}} onClick={() => window.location.href = auth ? '/login' : '/'}>Clientes</Button>
           </Stack>
           </Box>
           <Box>
