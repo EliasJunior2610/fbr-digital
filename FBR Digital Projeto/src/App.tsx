@@ -1,4 +1,4 @@
-import Header from "./components/Header/headerCliente";
+import Header from "./components/HeaderCliente/headerCliente";
 import Rodape from "./components/Footer/Footer";
 import { useEffect } from "react";
 

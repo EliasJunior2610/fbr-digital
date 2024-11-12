@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css'; 
-import Header from '../Header/headerCliente';
+import Header from '../HeaderCliente/headerCliente';
 
 const Register: React.FC = () => {
   const [formData, setFormData] = useState({
