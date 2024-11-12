@@ -10,6 +10,10 @@
   background-color: #303434;
 }
 
+#Login a {
+  text-decoration: none;
+}
+
 #Login form {
   display: flex;
   flex-direction: column;
@@ -67,6 +71,7 @@
 #Login #button input[type="submit"] {
   margin: 0px;
   margin-left: -9px;
+  width: 100px;
 }
 
 #Login input[type="submit"] {
@@ -109,9 +114,14 @@
 }
 
 #Login #SemConta {
-  color: #f26651;
+  color: #f9f9f9;
 }
 
 #buttonCadastrar label:hover {
   cursor: pointer;
+}
+
+#mouse:hover {
+  cursor: pointer;
+  color: #f26651;
 }
