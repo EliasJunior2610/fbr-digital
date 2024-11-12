@@ -3,6 +3,7 @@
 #MyRequest {
   font-family: "DM Mono", monospace;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #MyRequest h1 {
