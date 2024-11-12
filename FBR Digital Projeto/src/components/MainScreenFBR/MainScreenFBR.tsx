@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "./MainScreenFBR.css";
 import Footer from "../Footer/Footer";
-import Header from "../Header/header";
+import MenuAppBar from "../HeaderCliente/headerCliente";
 import { Link } from "react-router-dom";
 
 export default function MainScreenFBR() {
@@ -11,7 +11,7 @@ export default function MainScreenFBR() {
 
   return (
     <>
-      <Header />
+      <MenuAppBar />
       <div id="MainScreenFBR">
         <div id="conteudoFBR">
           <div id="conteudoFBR-item">

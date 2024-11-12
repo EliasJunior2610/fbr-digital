@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./MainScreenProvider.css";
-import Header from "../Header/header";
 import Footer from "../Footer/Footer";
+import MenuAppBar from "../HeaderProvedor/headerProvedor";
 
 export default function MainProvider() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function MainProvider() {
 
   return (
     <>
-      <Header />
+      <MenuAppBar />
       <div id="MainProvider">
         <div id="conteudo-mainProvedor">
           <div id="conteudo-itemMainProvedor">
