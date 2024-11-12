@@ -1,4 +1,4 @@
-import Header from "../HeaderProvedor/headerProvedor";
+import MenuAppBar from "../HeaderCliente/headerCliente";
 import imagem1 from "../../assets/MainScreen.png";
 import imagem2 from "../../assets/MainScreen 2.png";
 import Footer from "../Footer/Footer";
@@ -13,7 +13,7 @@ export default function MainScreen() {
 
   return (
     <>
-      <Header />
+      <MenuAppBar />
       <div id="paginaPrincipal">
         <div id="conteudo">
           <div className="section" id="section1">
