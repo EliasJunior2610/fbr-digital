@@ -1,17 +1,20 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
-import Header from "../HeaderCliente/headerCliente";
+import { useEffect } from "react";
 
 export default function Recovery() {
+  useEffect(() => {
+    document.title = "Recuperar Senha";
+  }, []);
+
   return (
     <Box>
-      <Header />
       <Box display="flex" flexDirection="column" alignItems="center" mt={7}>
         <Typography variant="h5" color="white" gutterBottom>
           RECUPERE SUA CONTA
         </Typography>
         <Typography variant="subtitle1" color="white" gutterBottom>
-          Para ajudar a proteger a sua conta, gostariamos de confirmar se e
-          você mesmo que está fazendo login.
+          Para ajudar a proteger a sua conta, gostariamos de confirmar se e você
+          mesmo que está fazendo login.
         </Typography>
         <Typography variant="subtitle1" color="white" gutterBottom mt={7}>
           Insira o código de recuperação enviado para o seu e-mail.

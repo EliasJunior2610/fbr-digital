@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Header from "../HeaderCliente/headerCliente";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,6 @@ export default function Login() {
 
   return (
     <div id="Página">
-      <Header />
       <div id="Login">
         <form action="">
           <h1>Login</h1>
@@ -48,7 +46,9 @@ export default function Login() {
               Lembre de mim
             </label>
             <Link to="/esqueceu">
-              <label htmlFor="">Esqueceu a senha?</label>
+              <label htmlFor="" id="mouse">
+                Esqueceu a senha?
+              </label>
             </Link>
           </div>
           <div id="button">
@@ -58,7 +58,9 @@ export default function Login() {
             Não tem conta?
           </label>
           <Link to="/registro" id="buttonCadastrar">
-            <label htmlFor="">Cadastrar-se</label>
+            <label htmlFor="" id="mouse">
+              Cadastrar-se
+            </label>
           </Link>
         </form>
       </div>
