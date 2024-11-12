@@ -6,7 +6,7 @@
 }
 
 .carrosel-button {
-  background-color: #008cba;
+  background-color: #f26651;
   color: white;
   border: none;
   padding: 10px;
@@ -14,6 +14,10 @@
   font-size: 18px;
   border-radius: 40px;
   margin: 10px;
+}
+
+.carrosel-button:hover {
+  background-color: #8c3b2f;
 }
 
 .carrosel-content {

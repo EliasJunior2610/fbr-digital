@@ -2,7 +2,6 @@ import MyService from "./components/MyService/MyService.tsx";
 import Report from "./components/Report/Report.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Register from "./components/Register/Register.tsx";
@@ -16,6 +15,9 @@ import MyRequest from "./components/MyRequest/MyRequest.tsx";
 import InternetProvider from "./components/InternetProvider/InternetProvider.tsx";
 import MainScreen from "./components/MainScreen/MainScreen.tsx";
 import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
+import MainProvider from "./components/MainScreenProvider/MainScreenProvider.tsx";
+import MainScreenFBR from "./components/MainScreenFBR/MainScreenFBR.tsx";
+import Profile from "./components/Profile/Profile.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -66,6 +68,18 @@ const rotas = createBrowserRouter([
   {
     path: "/carrosel",
     element: <Carrosel />,
+  },
+  {
+    path: "/provedor",
+    element: <MainProvider />,
+  },
+  {
+    path: "/FBR",
+    element: <MainScreenFBR />,
+  },
+  {
+    path: "/perfil",
+    element: <Profile />,
   },
 ]);
 

@@ -223,7 +223,7 @@ export default function RegisterClient() {
               </div>
             </>
           )}
-          <div id="decoration">
+          <div id="decorations">
             <div className={`ball ${etapa === 1 ? "active" : ""}`}></div>
             <div className={`ball ${etapa === 2 ? "active" : ""}`}></div>
           </div>

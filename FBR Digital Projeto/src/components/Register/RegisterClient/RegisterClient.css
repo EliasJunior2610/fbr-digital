@@ -8,6 +8,7 @@
   align-items: center;
   font-family: "Dm Mono", monospace;
   background-color: #303434;
+  margin-top: 100px;
 }
 
 #RegistroCliente form {
@@ -85,7 +86,7 @@
   width: 100%;
 }
 
-#decoration {
+#decorations {
   display: flex;
   justify-content: center;
   margin-top: 20px;

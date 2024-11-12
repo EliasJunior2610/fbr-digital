@@ -111,3 +111,7 @@
 #Login #SemConta {
   color: #f26651;
 }
+
+#buttonCadastrar label:hover {
+  cursor: pointer;
+}
