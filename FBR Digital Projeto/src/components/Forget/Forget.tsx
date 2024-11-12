@@ -44,7 +44,7 @@ export default function Forget() {
                 <TextField id="filled-basic" label="Escreva aqui:" color='info' variant="filled" />
             
                 <Stack spacing={2} direction="row">             
-                    <SendCode variant="contained" onClick={() => alert('Clicado!')}>Enviar código</SendCode>
+                    <SendCode variant="contained" onClick={() => window.location.href = '/recuperar'}>Enviar código</SendCode>
                 </Stack>
             </Box>
         </div>

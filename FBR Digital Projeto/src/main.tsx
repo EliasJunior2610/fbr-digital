@@ -17,6 +17,7 @@ import MainScreen from "./components/MainScreen/MainScreen.tsx";
 import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 import MainProvider from "./components/MainScreenProvider/MainScreenProvider.tsx";
 import MainScreenFBR from "./components/MainScreenFBR/MainScreenFBR.tsx";
+import Recovery from "./components/Recovery/Recovery.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const rotas = createBrowserRouter([
   {
     path: "/FBR",
     element: <MainScreenFBR />,
+  }, 
+  {
+    path: "/recuperar",
+    element: <Recovery />
   }
 ]);
 
