@@ -9,6 +9,10 @@ import "./MainScreen.css";
 export default function MainScreen() {
   useEffect(() => {
     document.title = "FBR Digital";
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = './assets/favicon.ico';   
+    document.head.appendChild(link);
   }, []);
 
   return (

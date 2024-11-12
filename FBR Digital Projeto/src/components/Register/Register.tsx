@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Register.css'; 
 // import Header from '../Header/headerCliente';
 import RegisterClient from './RegisterClient/RegisterClient';

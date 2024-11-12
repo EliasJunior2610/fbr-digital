@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Header from "../HeaderCliente/headerCliente";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,6 @@ export default function Login() {
   
   return (
     <div id="Página">
-      <Header />
       <div id="Login">
         <form action="">
           <h1>Login</h1>
