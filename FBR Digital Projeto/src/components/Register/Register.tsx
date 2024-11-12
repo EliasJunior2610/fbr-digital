@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Register.css'; 
-// import Header from '../Header/headerCliente';
+import Header from '../HeaderCliente/headerCliente';
 import RegisterClient from './RegisterClient/RegisterClient';
 import RegisterProvider from './RegisterProvider/RegisterProvider';
 
