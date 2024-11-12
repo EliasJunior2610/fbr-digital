@@ -18,6 +18,10 @@ import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 import MainProvider from "./components/MainScreenProvider/MainScreenProvider.tsx";
 import MainScreenFBR from "./components/MainScreenFBR/MainScreenFBR.tsx";
 import Recovery from "./components/Recovery/Recovery.tsx";
+import HistoricClient from "./components/HistoricClient/HistoricClient.tsx";
+import MyClient from "./components/ClientList/MyClient.tsx";
+import ProviderList from "./components/ProviderList/ProviderList.tsx";
+import ClientListFBR from "./components/ClientListFBR/ClientListFBR.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -76,11 +80,27 @@ const rotas = createBrowserRouter([
   {
     path: "/FBR",
     element: <MainScreenFBR />,
-  }, 
+  },
   {
     path: "/recuperar",
-    element: <Recovery />
-  }
+    element: <Recovery />,
+  },
+  {
+    path: "/historico",
+    element: <HistoricClient />,
+  },
+  {
+    path: "/meus-clientes",
+    element: <MyClient />,
+  },
+  {
+    path: "/provedores",
+    element: <ProviderList />,
+  },
+  {
+    path: "/lista-clientes",
+    element: <ClientListFBR />,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
