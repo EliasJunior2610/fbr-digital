@@ -20,7 +20,11 @@ export default function Products() {
   const [servicos, setServicos] = useState(servicosIniciais);
 
   useEffect(() => {
-    document.title = "Login";
+    document.title = "Meus Produtos";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   const excluirProduto = (plano: string) => {

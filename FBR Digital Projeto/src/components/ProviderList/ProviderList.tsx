@@ -20,6 +20,10 @@ const Provedores: Provedores[] = [
 export default function ProviderList() {
   useEffect(() => {
     document.title = "Provedores";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   return (

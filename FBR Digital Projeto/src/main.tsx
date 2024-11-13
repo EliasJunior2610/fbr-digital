@@ -14,7 +14,6 @@ import NewService from "./components/NewService/NewService.tsx";
 import MyRequest from "./components/MyRequest/MyRequest.tsx";
 import InternetProvider from "./components/InternetProvider/InternetProvider.tsx";
 import MainScreen from "./components/MainScreen/MainScreen.tsx";
-import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 import MainProvider from "./components/MainScreenProvider/MainScreenProvider.tsx";
 import MainScreenFBR from "./components/MainScreenFBR/MainScreenFBR.tsx";
 import Recovery from "./components/Recovery/Recovery.tsx";
@@ -69,10 +68,6 @@ const rotas = createBrowserRouter([
   {
     path: "/relatorio",
     element: <Report />,
-  },
-  {
-    path: "/carrosel",
-    element: <Carrosel />,
   },
   {
     path: "/provedor",

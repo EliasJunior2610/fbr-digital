@@ -9,6 +9,10 @@ export default function Report() {
 
   useEffect(() => {
     document.title = "Relatórios";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   const togglePopup = () => {
