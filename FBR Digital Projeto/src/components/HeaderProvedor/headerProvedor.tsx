@@ -80,7 +80,9 @@ export default function MenuAppBar() {
               <Button
                 color="inherit"
                 sx={{ mx: "auto" }}
-                onClick={() => (window.location.href = auth ? "/login" : "/")}
+                onClick={() =>
+                  (window.location.href = auth ? "/login" : "/meus-produtos")
+                }
               >
                 Meus Produtos
               </Button>

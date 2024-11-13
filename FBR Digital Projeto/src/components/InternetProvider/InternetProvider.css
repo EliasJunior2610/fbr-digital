@@ -1,16 +1,16 @@
 #InternetProvider #etiquetas {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
 
 #buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-  
+
 #buttons button {
   border: none;
   border-radius: 5px;
@@ -20,7 +20,7 @@
   padding: 10px 35px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-  
+
 #buttons .ativo {
   background-color: #f26651;
   color: #ffffff;

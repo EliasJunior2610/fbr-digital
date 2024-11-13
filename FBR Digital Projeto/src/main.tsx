@@ -22,6 +22,7 @@ import HistoricClient from "./components/HistoricClient/HistoricClient.tsx";
 import MyClient from "./components/ClientList/MyClient.tsx";
 import ProviderList from "./components/ProviderList/ProviderList.tsx";
 import ClientListFBR from "./components/ClientListFBR/ClientListFBR.tsx";
+import Products from "./components/Products/Products.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -100,6 +101,10 @@ const rotas = createBrowserRouter([
   {
     path: "/lista-clientes",
     element: <ClientListFBR />,
+  },
+  {
+    path: "/meus-produtos",
+    element: <Products />,
   },
 ]);
 
