@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './NewService.css';
 import { Link } from "react-router-dom";
-import MenuAppBar from "../HeaderCliente/headerCliente";
+import MenuAppBar from "../HeaderProvedor/headerProvedor";
 
 export default function NewService() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
