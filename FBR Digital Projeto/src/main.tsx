@@ -14,7 +14,6 @@ import NewService from "./components/NewService/NewService.tsx";
 import MyRequest from "./components/MyRequest/MyRequest.tsx";
 import InternetProvider from "./components/InternetProvider/InternetProvider.tsx";
 import MainScreen from "./components/MainScreen/MainScreen.tsx";
-import Carrosel from "./components/MainScreen/Carrossel/Carrossel.tsx";
 
 const rotas = createBrowserRouter([
   {
@@ -62,10 +61,7 @@ const rotas = createBrowserRouter([
     path: "/relatorio",
     element: <Report />,
   },
-  {
-    path: "/carrosel",
-    element: <Carrosel />,
-  },
+  
 ]);
 
 createRoot(document.getElementById("root")!).render(

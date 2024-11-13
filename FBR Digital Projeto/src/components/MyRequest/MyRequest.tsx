@@ -15,6 +15,10 @@ export default function MyRequest() {
 
     useEffect(() => {
         document.title = 'Minhas Solicitações';
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = './assets/favicon.ico';   
+        document.head.appendChild(link);
     }, []);
 
     const handleRequestClick = (tipo: string, data: string, horario: string, observacoes: string = '') => {

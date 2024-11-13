@@ -9,6 +9,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
+import { useEffect } from 'react';
 
 const SendCode = styled(Button)({
     backgroundColor: '#F26651',
@@ -21,6 +22,14 @@ const SendCode = styled(Button)({
 
 
 export default function Forget() {
+    useEffect(() => {
+        document.title = "Esqueceu a Senha";
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = './assets/favicon.ico';   
+        document.head.appendChild(link);
+    }, []);
+    
     return (
         <div id="Forget">
             <Header />

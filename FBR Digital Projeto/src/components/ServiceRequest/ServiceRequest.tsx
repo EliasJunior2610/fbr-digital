@@ -7,7 +7,11 @@ export default function ServiceRequest() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     useEffect(() => {
-        document.title = 'Solicitação de Serviço';
+        document.title = "Solicitação";
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = './assets/favicon.ico';   
+        document.head.appendChild(link);
     }, []);
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {

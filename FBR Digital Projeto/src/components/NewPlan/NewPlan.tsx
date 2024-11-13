@@ -7,7 +7,11 @@ export default function NewPlan() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     useEffect(() => {
-        document.title = 'Novo Plano';
+        document.title = "Novo Plano";
+        const link = document.createElement('link');
+        link.rel = 'icon';
+        link.href = './assets/favicon.ico';   
+        document.head.appendChild(link);
     }, []);
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {

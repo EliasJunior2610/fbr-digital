@@ -7,9 +7,12 @@ import RegisterProvider from './RegisterProvider/RegisterProvider';
 
 export default function Register() {
   useEffect(() => {
-    document.title = "Cadastro";
+    document.title = "Registro";
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = './assets/favicon.ico';   
+    document.head.appendChild(link);
   }, []);
-
   const [etapa, setEtapa] = useState(1);
 
   const nextStep = () => setEtapa(2);

@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
   useEffect(() => {
-    document.title = 'Login'
-  }, [])
+    document.title = "Login";
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = './assets/favicon.ico';   
+    document.head.appendChild(link);
+  }, []);
   
   return (
     <div id="Página">

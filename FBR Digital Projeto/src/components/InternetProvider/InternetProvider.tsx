@@ -6,7 +6,11 @@ import Header from "../HeaderCliente/headerCliente";
 
 export default function InternetProvider() {
   useEffect(() => {
-    document.title = "Planos";
+    document.title = "Provedor Internet";
+    const link = document.createElement('link');
+    link.rel = 'icon';
+    link.href = './assets/favicon.ico';   
+    document.head.appendChild(link);
   }, []);
 
   const [etapa, setEtapa] = useState(1);
