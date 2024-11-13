@@ -1,175 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap");
 
 #NewService {
-    font-family: 'DM Mono', monospace;
-    text-align: center;
+  font-family: "DM Mono", monospace;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 #NewService h1 {
-    color: #f26651;
-    margin-bottom: 70px;
+  color: #f26651;
+  margin-bottom: 70px;
 }
 
 #lados {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #etiqueta {
-    background-color: #f26651;
-    border-radius: 20px; 
-    width: 250px; 
-    height: 400px; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; 
+  background-color: #f26651;
+  border-radius: 20px;
+  width: 250px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#etiqueta h2, #etiqueta h3, #etiqueta h4, #etiqueta p {
-    text-align: center;
-    margin: 10px 0; 
+#etiqueta h2,
+#etiqueta h3,
+#etiqueta h4,
+#etiqueta p {
+  text-align: center;
+  margin: 10px 0;
 }
 
-#etiqueta #etiqueta-h3, #etiqueta #etiqueta-h4 {
-    background-color: #d9d9d9;
-    width: 100%; 
-    padding: 10px;
-    border-radius: 10px; 
-}
-
-#etiqueta #etiqueta-p {
-    background-color: #797979;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px; 
-    color: white;
-    font-size: 12px; 
+#etiqueta #etiqueta-h3,
+#etiqueta #etiqueta-h4 {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #etiqueta #etiqueta-p {
-    padding: 35px;
+  background-color: #797979;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
 }
 
-#etiqueta h2, #etiqueta p {
-    color: white;
+#etiqueta #etiqueta-p {
+  padding: 35px;
+}
+
+#etiqueta h2,
+#etiqueta p {
+  color: white;
 }
 
 #novo-servico {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 10px;
 }
 
 #novo-servico label {
-    color: white;
+  color: white;
 }
 
-#novo-servico input, #novo-servico textarea {
-    border-radius: 5px;
-    background-color: #d9d9d9;
+#novo-servico input,
+#novo-servico textarea {
+  border-radius: 5px;
+  background-color: #d9d9d9;
 }
 
-#novo-servico input[type='submit'] {
-    background-color: #34A752;
-    color: white;
-    padding: 5px;
-    width: 150px;
-    border-radius: 15px;
-    font-family: 'DM Mono', monospace;
+#novo-servico input[type="submit"] {
+  background-color: #34a752;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  border-radius: 15px;
+  font-family: "DM Mono", monospace;
 }
 
-#novo-servico input[type='submit']:hover {
-    cursor: pointer;
-    background-color: darkgreen;
-}@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap');
+#novo-servico input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500;700&display=swap");
 
 #NewService {
-    font-family: 'DM Mono', monospace;
-    text-align: center;
+  font-family: "DM Mono", monospace;
+  text-align: center;
 }
 
 #NewService h1 {
-    color: #f26651;
-    margin-bottom: 70px;
+  color: #f26651;
+  margin-bottom: 70px;
 }
 
 #lados {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #etiqueta {
-    background-color: #f26651;
-    border-radius: 20px; 
-    width: 250px; 
-    height: 400px; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; 
+  background-color: #f26651;
+  border-radius: 20px;
+  width: 250px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-#etiqueta h2, #etiqueta h3, #etiqueta h4, #etiqueta p {
-    text-align: center;
-    margin: 10px 0; 
+#etiqueta h2,
+#etiqueta h3,
+#etiqueta h4,
+#etiqueta p {
+  text-align: center;
+  margin: 10px 0;
 }
 
-#etiqueta #etiqueta-h3, #etiqueta #etiqueta-h4 {
-    background-color: #d9d9d9;
-    width: 100%; 
-    padding: 10px;
-    border-radius: 10px; 
-}
-
-#etiqueta #etiqueta-p {
-    background-color: #797979;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px; 
-    color: white;
-    font-size: 12px; 
+#etiqueta #etiqueta-h3,
+#etiqueta #etiqueta-h4 {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 #etiqueta #etiqueta-p {
-    padding: 35px;
+  background-color: #797979;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
 }
 
-#etiqueta h2, #etiqueta p {
-    color: white;
+#etiqueta #etiqueta-p {
+  padding: 35px;
+}
+
+#etiqueta h2,
+#etiqueta p {
+  color: white;
 }
 
 #novo-servico {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 10px;
 }
 
 #novo-servico label {
-    color: white;
+  color: white;
 }
 
-#novo-servico input, #novo-servico textarea {
-    border-radius: 5px;
-    background-color: #d9d9d9;
+#novo-servico input,
+#novo-servico textarea {
+  border-radius: 5px;
+  background-color: #d9d9d9;
 }
 
-#novo-servico input[type='submit'] {
-    background-color: #34A752;
-    color: white;
-    padding: 5px;
-    width: 150px;
-    border-radius: 15px;
-    font-family: 'DM Mono', monospace;
+#novo-servico input[type="submit"] {
+  background-color: #34a752;
+  color: white;
+  padding: 5px;
+  width: 150px;
+  border-radius: 15px;
+  font-family: "DM Mono", monospace;
 }
 
-#novo-servico input[type='submit']:hover {
-    cursor: pointer;
-    background-color: darkgreen;
+#novo-servico input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: darkgreen;
 }
