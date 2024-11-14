@@ -7,7 +7,11 @@ export default function NewService() {
     const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     useEffect(() => {
-        document.title = 'Novo Serviço';
+        document.title = "Novo Serviço";
+        const link = document.createElement("link");
+        link.rel = "icon";
+        link.href = "./assets/favicon.ico";
+        document.head.appendChild(link);
     }, []);
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {

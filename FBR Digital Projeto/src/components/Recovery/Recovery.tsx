@@ -3,7 +3,11 @@ import { useEffect } from "react";
 
 export default function Recovery() {
   useEffect(() => {
-    document.title = "Recuperar Senha";
+    document.title = "Recuperação de Senha";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   return (

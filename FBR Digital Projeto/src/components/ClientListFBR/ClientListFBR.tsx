@@ -19,7 +19,11 @@ const Clientes: Clientes[] = [
 
 export default function ClientListFBR() {
   useEffect(() => {
-    document.title = "Login";
+    document.title = "Lista Clientes";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   return (

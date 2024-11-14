@@ -7,6 +7,10 @@ import MenuAppBar from "../HeaderProvedor/headerProvedor";
 export default function MainProvider() {
   useEffect(() => {
     document.title = "FBR Digital";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   return (

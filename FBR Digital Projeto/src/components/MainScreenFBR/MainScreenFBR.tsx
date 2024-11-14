@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 export default function MainScreenFBR() {
   useEffect(() => {
     document.title = "FBR Digital";
+    const link = document.createElement("link");
+    link.rel = "icon";
+    link.href = "./assets/favicon.ico";
+    document.head.appendChild(link);
   }, []);
 
   return (
