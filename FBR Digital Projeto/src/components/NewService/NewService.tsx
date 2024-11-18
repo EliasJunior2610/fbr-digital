@@ -63,7 +63,7 @@ export default function NewService() {
                     <div className="popup-content">
                         <h2>Serviço Criado!</h2>
                         <p>Você será redirecionado para a página principal agora.</p>
-                        <Link to='/'><button onClick={closePopupAndRedirect}>Concluir</button></Link>
+                        <Link to='/provedor'><button onClick={closePopupAndRedirect}>Concluir</button></Link>
                     </div>
                 </div>
             )}
